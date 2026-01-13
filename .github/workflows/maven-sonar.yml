@@ -29,7 +29,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: >
-          cd ./backend/homework/5/hospital-staffing && mvn install-DskipTests sonar:sonar
+          cd ./backend/homework/5/hospital-staffing && mvn install - DskipTests sonar:sonar
           -Dsonar.verbose=true 
           -Dsonar.projectKey=${{ secrets.KDUER_NAME }}-BE-Homework-5-hospital-staffing
           -Dsonar.projectName=${{ secrets.KDUER_NAME }}-BE-Homework-5-hospital-staffing
