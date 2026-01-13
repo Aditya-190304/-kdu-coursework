@@ -1,66 +1,58 @@
 name: Maven Sonar Analysis
-
 on:
   push:
     branches:
-      - main
+      - main # the name of your main branch
   pull_request:
     types: [opened, synchronize, reopened]
-
 jobs:
   build:
     name: Sonar analysis
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: Set up JDK 21
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v1
         with:
-          distribution: temurin
-          java-version: "21"
-          cache: maven
-
+          java-version: 21
       - name: Cache SonarQube packages
         uses: actions/cache@v4
         with:
           path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
-
-      - name: Build and analyze (Sonar)
-        working-directory: backend/homework/5/hospital-staffing
+      ## run sonar analysis
+      - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: |
-          mvn -B clean verify sonar:sonar \
-            -Dsonar.verbose=true \
-            -Dsonar.projectKey=${{ secrets.KDUER_NAME }}-BE-Homework-5 \
-            -Dsonar.projectName=${{ secrets.KDUER_NAME }}-BE-Homework-5
-
+        run: >
+          cd ./backend/homework/5/hospital-staffing && mvn install-DskipTests sonar:sonar
+          -Dsonar.verbose=true 
+          -Dsonar.projectKey=${{ secrets.KDUER_NAME }}-BE-Homework-5-hospital-staffing
+          -Dsonar.projectName=${{ secrets.KDUER_NAME }}-BE-Homework-5-hospital-staffing
+      ## below steps are for posting comment on Github PR
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: "20"
+          node-version: '16.x'
           cache: npm
           cache-dependency-path: .github/actions-scripts/package-lock.json
 
       - name: Install dependencies
+        run: npm install
         working-directory: .github/actions-scripts/
-        run: npm ci
 
       - name: Run script
-        run: node .github/actions-scripts/post-comment.js
+        run: |
+          node .github/actions-scripts/post-comment.js
         env:
           PERSONAL_ACCESS_TOKEN_GITHUB: ${{ secrets.PERSONAL_ACCESS_TOKEN_GITHUB }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-          SONAR_PROJECT_KEY: ${{ secrets.KDUER_NAME }}-BE-Homework-5
+          SONAR_PROJECT_KEY: ${{ secrets.KDUER_NAME }}-BE-Homework-5-hospital-staffing
           USERNAME_GITHUB: ${{ secrets.USERNAME_GITHUB }}
           REPO_NAME_GITHUB: ${{ secrets.REPO_NAME_GITHUB }}
           PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
