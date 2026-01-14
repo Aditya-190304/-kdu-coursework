@@ -31,7 +31,7 @@ jobs:
         run: >
           cd ./backend/homework/6/HospitalStaffing && mvn install -DskipTests sonar:sonar
           -Dsonar.verbose=true 
-          -Dsonar.projectKey=${{ secrets.KDUER_NAME }}-BE-Homework-6-HospitalStaffing-
+          -Dsonar.projectKey=${{ secrets.KDUER_NAME }}-BE-Homework-6-HospitalStaffing
           -Dsonar.projectName=${{ secrets.KDUER_NAME }}-BE-Homework-6HospitalStaffing
       ## below steps are for posting comment on Github PR
       - name: Setup Node
