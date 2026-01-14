@@ -1,6 +1,6 @@
 package com.hospital.staffing.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore; // <--- ADD THIS IMPORT
+import com.fasterxml.jackson.annotation.JsonIgnore; 
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,7 +22,7 @@ public class ShiftType {
     private String typeName;
 
     @OneToMany(mappedBy = "shiftType", cascade = CascadeType.ALL)
-    @JsonIgnore // <--- ADD THIS ANNOTATION to stop the infinite loop
+    @JsonIgnore 
     private List<Shift> shifts;
 
     @CreatedDate
@@ -32,4 +32,5 @@ public class ShiftType {
     @LastModifiedDate
     @Column(nullable = false)
     private LocalDateTime updatedAt;
+
 }
