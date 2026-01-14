@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @Table(name = "staff_user")
-@EntityListeners(AuditingEntityListener.class) // <--- FIX: Listens for save events
+@EntityListeners(AuditingEntityListener.class) 
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,14 +21,15 @@ public class User {
     private String name;
     private String email;
 
-    @Enumerated(EnumType.STRING) // <--- FIX: Uses Enum instead of String
+    @Enumerated(EnumType.STRING) 
     private UserRole role;
 
     @CreatedDate
-    @Column(nullable = false, updatable = false) // <--- FIX: Audit Column
+    @Column(nullable = false, updatable = false) 
     private LocalDateTime createdAt;
 
     @LastModifiedDate
-    @Column(nullable = false) // <--- FIX: Audit Column
+    @Column(nullable = false) 
     private LocalDateTime updatedAt;
+
 }
