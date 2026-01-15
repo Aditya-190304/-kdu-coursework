@@ -1,0 +1,70 @@
+2026-01-15 12:40:39 INFO  - Starting DemoApplication using Java 21.0.9 with PID 7148 (C:\Users\Dell\Documents\Kickdrum\demo\target\classes started by Dell in C:\Users\Dell\Documents\Kickdrum\demo)
+2026-01-15 12:40:39 INFO  - No active profile set, falling back to 1 default profile: "default"
+2026-01-15 12:40:41 INFO  - Started DemoApplication in 3.19 seconds (process running for 4.083)
+2026-01-15 12:41:47 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:41:47 INFO  - The door is now open for [Guest]
+2026-01-15 12:41:47 INFO  - SUCCESS: User has entered the building
+2026-01-15 12:42:31 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:42:31 WARN  - SECURITY ALERT: Unauthorized access blocked!
+2026-01-15 12:42:31 INFO  - SUCCESS: User has entered the building
+2026-01-15 12:43:15 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:43:15 ERROR - ALARM TRIGGERED: System error detected: Input string was empty.
+2026-01-15 12:44:44 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:44:44 ERROR - ALARM TRIGGERED: System error detected: Input string was empty.
+2026-01-15 12:44:54 INFO  - Starting DemoApplication using Java 21.0.9 with PID 2064 (C:\Users\Dell\Documents\Kickdrum\demo\target\classes started by Dell in C:\Users\Dell\Documents\Kickdrum\demo)
+2026-01-15 12:44:54 INFO  - No active profile set, falling back to 1 default profile: "default"
+2026-01-15 12:44:56 INFO  - Started DemoApplication in 2.767 seconds (process running for 3.504)
+2026-01-15 12:45:03 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:45:03 INFO  - The door is now open for [Guest]
+2026-01-15 12:45:03 INFO  - SUCCESS: User has entered the building
+2026-01-15 12:45:10 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:45:10 WARN  - SECURITY ALERT: Unauthorized access blocked!
+2026-01-15 12:45:10 INFO  - SUCCESS: User has entered the building
+2026-01-15 12:45:18 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:45:18 ERROR - ALARM TRIGGERED: System error detected: Input string was empty.
+2026-01-15 12:45:46 INFO  - Battery level is stable.
+2026-01-15 12:45:46 INFO  - Operation took 103 ms
+2026-01-15 12:49:31 INFO  - Starting DemoApplication using Java 21.0.9 with PID 13220 (C:\Users\Dell\Documents\Kickdrum\demo\target\classes started by Dell in C:\Users\Dell\Documents\Kickdrum\demo)
+2026-01-15 12:49:31 INFO  - No active profile set, falling back to 1 default profile: "default"
+2026-01-15 12:49:33 INFO  - Started DemoApplication in 3.108 seconds (process running for 3.896)
+2026-01-15 12:50:36 INFO  - Starting DemoApplication using Java 21.0.9 with PID 324 (C:\Users\Dell\Documents\Kickdrum\demo\target\classes started by Dell in C:\Users\Dell\Documents\Kickdrum\demo)
+2026-01-15 12:50:36 INFO  - No active profile set, falling back to 1 default profile: "default"
+2026-01-15 12:50:38 INFO  - Started DemoApplication in 2.706 seconds (process running for 3.339)
+2026-01-15 12:51:36 INFO  - Starting DemoApplication using Java 21.0.9 with PID 20796 (C:\Users\Dell\Documents\Kickdrum\demo\target\classes started by Dell in C:\Users\Dell\Documents\Kickdrum\demo)
+2026-01-15 12:51:36 INFO  - No active profile set, falling back to 1 default profile: "default"
+2026-01-15 12:51:38 INFO  - Started DemoApplication in 2.593 seconds (process running for 3.281)
+2026-01-15 12:52:20 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:52:20 INFO  - The door is now open for [Guest]
+2026-01-15 12:52:20 INFO  - SUCCESS: User has entered the building
+2026-01-15 12:52:53 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:52:53 WARN  - SECURITY ALERT: Unauthorized access blocked!
+2026-01-15 12:53:01 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:53:01 ERROR - ALARM TRIGGERED: System error detected: Input string was empty.
+2026-01-15 12:53:09 INFO  - Battery level is stable.
+2026-01-15 12:53:09 INFO  - Operation took 107 ms
+2026-01-15 12:53:47 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:53:47 ERROR - ALARM TRIGGERED: System error detected: Input string was empty.
+2026-01-15 12:54:23 INFO  - Starting DemoApplication using Java 21.0.9 with PID 4384 (C:\Users\Dell\Documents\Kickdrum\demo\target\classes started by Dell in C:\Users\Dell\Documents\Kickdrum\demo)
+2026-01-15 12:54:23 INFO  - No active profile set, falling back to 1 default profile: "default"
+2026-01-15 12:54:25 INFO  - Started DemoApplication in 2.658 seconds (process running for 3.308)
+2026-01-15 12:55:05 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:55:05 INFO  - The door is now open for [Guest]
+2026-01-15 12:55:05 INFO  - SUCCESS: User has entered the building
+2026-01-15 12:55:11 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:55:11 WARN  - SECURITY ALERT: Unauthorized access blocked!
+2026-01-15 12:55:20 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 12:55:20 ERROR - ALARM TRIGGERED: System error detected: Input string was empty.
+2026-01-15 12:55:25 INFO  - Battery level is stable.
+2026-01-15 12:55:25 INFO  - Operation took 105 ms
+2026-01-15 13:16:26 INFO  - Starting DemoApplication using Java 21.0.9 with PID 18572 (C:\Users\Dell\Documents\Kickdrum\demo\target\classes started by Dell in C:\Users\Dell\Documents\Kickdrum\demo)
+2026-01-15 13:16:26 INFO  - No active profile set, falling back to 1 default profile: "default"
+2026-01-15 13:16:29 INFO  - Started DemoApplication in 2.938 seconds (process running for 3.57)
+2026-01-15 13:16:49 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 13:16:49 INFO  - The door is now open for [Guest]
+2026-01-15 13:16:49 INFO  - SUCCESS: User has entered the building
+2026-01-15 13:16:56 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 13:16:56 WARN  - SECURITY ALERT: Unauthorized access blocked!
+2026-01-15 13:17:02 INFO  - ACCESS ATTEMPT: User is approaching the door
+2026-01-15 13:17:02 ERROR - ALARM TRIGGERED: System error detected: Input string was empty.
+2026-01-15 13:17:09 INFO  - Battery level is stable.
+2026-01-15 13:17:09 INFO  - Operation took 114 ms

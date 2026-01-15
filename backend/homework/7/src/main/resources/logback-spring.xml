@@ -1,0 +1,25 @@
+<configuration>
+
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>%d{HH:mm:ss} %highlight(%-5level) %cyan([%thread]) - %msg%n</Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="File" class="ch.qos.logback.core.FileAppender">
+        <file>smart-lock.log</file>
+        <encoder>
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level - %msg%n</Pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.smartlock" level="INFO" additivity="false">
+        <appender-ref ref="Console" />
+        <appender-ref ref="File" />
+    </logger>
+
+    <root level="WARN">
+        <appender-ref ref="Console" />
+    </root>
+
+</configuration>
