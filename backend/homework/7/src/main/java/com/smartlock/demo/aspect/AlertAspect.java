@@ -1,6 +1,5 @@
 package com.smartlock.demo.aspect;
 
-import com.smartlock.demo.annotation.SystemAlarm;
 import com.smartlock.demo.exception.UnauthorizedAccessException;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
@@ -32,4 +31,5 @@ public class AlertAspect {
 
         log.error("ALARM TRIGGERED: System error detected: {}", ex.getMessage());
     }
+
 }
