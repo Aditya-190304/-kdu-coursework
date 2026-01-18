@@ -1,0 +1,858 @@
+2026-01-18 21:08:06 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-01-18 21:08:06 [main] [] INFO  com.libraryweb.LibraryApplication - Starting LibraryApplication using Java 21.0.9 with PID 29488 (C:\Users\adity\Downloads\library-parent\library-web\target\classes started by adity in C:\Users\adity\Downloads\library-parent)
+2026-01-18 21:08:06 [main] [] INFO  com.libraryweb.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-18 21:08:07 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-18 21:08:07 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2026-01-18 21:08:08 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-18 21:08:08 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-18 21:08:08 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-18 21:08:08 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-01-18 21:08:08 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-18 21:08:08 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1603 ms
+2026-01-18 21:08:08 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-18 21:08:08 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-01-18 21:08:08 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-18 21:08:08 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-18 21:08:08 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-18 21:08:08 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2026-01-18 21:08:08 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-18 21:08:08 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-18 21:08:08 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-18 21:08:09 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-18 21:08:09 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-18 21:08:10 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-18 21:08:11 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-18 21:08:11 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name securityUserDetailsService
+2026-01-18 21:08:11 [main] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:librarydb'
+2026-01-18 21:08:11 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-18 21:08:11 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-18 21:08:11 [main] [] INFO  com.libraryweb.LibraryApplication - Started LibraryApplication in 5.499 seconds (process running for 6.688)
+2026-01-18 21:08:31 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-18 21:08:31 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-18 21:08:31 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-01-18 21:09:26 [http-nio-8080-exec-4] [8994f1c1-4981-487f-bf42-5d29e0390f86] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui.html
+2026-01-18 21:09:26 [http-nio-8080-exec-4] [8994f1c1-4981-487f-bf42-5d29e0390f86] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui.html status=302 latency=132ms
+2026-01-18 21:09:26 [http-nio-8080-exec-5] [34fcd383-ac41-4161-8f10-8d0b83b0d13c] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/index.html
+2026-01-18 21:09:26 [http-nio-8080-exec-5] [34fcd383-ac41-4161-8f10-8d0b83b0d13c] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/index.html status=200 latency=18ms
+2026-01-18 21:09:26 [http-nio-8080-exec-2] [866ef699-87e6-413f-9326-b554135b9734] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui.css
+2026-01-18 21:09:26 [http-nio-8080-exec-9] [72aa2650-6fc5-4276-b759-f90613f60291] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-initializer.js
+2026-01-18 21:09:26 [http-nio-8080-exec-8] [692f5774-767c-4fe4-8db9-36fc33692c2e] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui-bundle.js
+2026-01-18 21:09:26 [http-nio-8080-exec-3] [40ae0ed3-43b2-497f-9217-6e2e9fc97b1a] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/index.css
+2026-01-18 21:09:26 [http-nio-8080-exec-6] [24148963-b37d-44f2-a175-0c74816fe8b7] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-01-18 21:09:26 [http-nio-8080-exec-3] [40ae0ed3-43b2-497f-9217-6e2e9fc97b1a] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/index.css status=200 latency=5ms
+2026-01-18 21:09:26 [http-nio-8080-exec-2] [866ef699-87e6-413f-9326-b554135b9734] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui.css status=200 latency=21ms
+2026-01-18 21:09:26 [http-nio-8080-exec-6] [24148963-b37d-44f2-a175-0c74816fe8b7] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui-standalone-preset.js status=200 latency=8ms
+2026-01-18 21:09:26 [http-nio-8080-exec-8] [692f5774-767c-4fe4-8db9-36fc33692c2e] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui-bundle.js status=200 latency=22ms
+2026-01-18 21:09:26 [http-nio-8080-exec-9] [72aa2650-6fc5-4276-b759-f90613f60291] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-initializer.js status=200 latency=51ms
+2026-01-18 21:09:26 [http-nio-8080-exec-7] [378d2463-2628-4120-bc90-2cc26d62f7ab] INFO  c.l.filter.CorrelationFilter - Request Started: GET /v3/api-docs/swagger-config
+2026-01-18 21:09:26 [http-nio-8080-exec-10] [f8b16462-9f94-4656-b048-3213e9bdc300] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/favicon-32x32.png
+2026-01-18 21:09:26 [http-nio-8080-exec-10] [f8b16462-9f94-4656-b048-3213e9bdc300] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/favicon-32x32.png status=200 latency=4ms
+2026-01-18 21:09:26 [http-nio-8080-exec-7] [378d2463-2628-4120-bc90-2cc26d62f7ab] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/v3/api-docs/swagger-config status=200 latency=11ms
+2026-01-18 21:09:26 [http-nio-8080-exec-1] [9175dcfb-030f-4595-ac14-bd2f8dc3b935] INFO  c.l.filter.CorrelationFilter - Request Started: GET /v3/api-docs
+2026-01-18 21:09:27 [http-nio-8080-exec-1] [9175dcfb-030f-4595-ac14-bd2f8dc3b935] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/v3/api-docs status=200 latency=397ms
+2026-01-18 21:09:27 [http-nio-8080-exec-1] [] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'] with root cause
+java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'
+	at org.springdoc.core.service.GenericResponseService.lambda$getGenericMapResponse$8(GenericResponseService.java:700)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
+	at org.springdoc.core.service.GenericResponseService.getGenericMapResponse(GenericResponseService.java:702)
+	at org.springdoc.core.service.GenericResponseService.build(GenericResponseService.java:245)
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:496)
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:673)
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$calculatePath$11(OpenApiResource.java:219)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.springdoc.webmvc.api.OpenApiResource.calculatePath(OpenApiResource.java:200)
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$getPaths$2(OpenApiResource.java:170)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.springdoc.webmvc.api.OpenApiResource.getPaths(OpenApiResource.java:149)
+	at org.springdoc.api.AbstractOpenApiResource.getOpenApi(AbstractOpenApiResource.java:350)
+	at org.springdoc.webmvc.api.OpenApiResource.openapiJson(OpenApiResource.java:124)
+	at org.springdoc.webmvc.api.OpenApiWebMvcResource.openapiJson(OpenApiWebMvcResource.java:111)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.libraryweb.filter.CorrelationFilter.doFilter(CorrelationFilter.java:37)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-18 21:11:10 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-18 21:11:10 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-18 21:11:10 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-18 21:11:10 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-18 21:11:10 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-18 21:12:10 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-01-18 21:12:10 [main] [] INFO  com.libraryweb.LibraryApplication - Starting LibraryApplication using Java 21.0.9 with PID 8088 (C:\Users\adity\Downloads\library-parent\library-web\target\classes started by adity in C:\Users\adity\Downloads\library-parent)
+2026-01-18 21:12:10 [main] [] INFO  com.libraryweb.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-18 21:12:11 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-18 21:12:11 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2026-01-18 21:12:11 [main] [] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'conventionErrorViewResolver' defined in class path resource [org/springframework/boot/webmvc/autoconfigure/error/ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration.class]: Cannot register bean definition [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.webmvc.autoconfigure.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration; factoryMethodName=conventionErrorViewResolver; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/webmvc/autoconfigure/error/ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration.class]] for bean 'conventionErrorViewResolver' since there is already [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration; factoryMethodName=conventionErrorViewResolver; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration.class]] bound.
+2026-01-18 21:12:11 [main] [] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-01-18 21:12:11 [main] [] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'conventionErrorViewResolver', defined in class path resource [org/springframework/boot/webmvc/autoconfigure/error/ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/error/ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-01-18 21:12:59 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-01-18 21:12:59 [main] [] INFO  com.libraryweb.LibraryApplication - Starting LibraryApplication using Java 21.0.9 with PID 29524 (C:\Users\adity\Downloads\library-parent\library-web\target\classes started by adity in C:\Users\adity\Downloads\library-parent)
+2026-01-18 21:12:59 [main] [] INFO  com.libraryweb.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-18 21:12:59 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-18 21:12:59 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2026-01-18 21:13:00 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-18 21:13:00 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-18 21:13:00 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-18 21:13:00 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-01-18 21:13:00 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-18 21:13:00 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1157 ms
+2026-01-18 21:13:00 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-18 21:13:00 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-01-18 21:13:00 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-18 21:13:01 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-18 21:13:01 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-18 21:13:01 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2026-01-18 21:13:01 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-18 21:13:01 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-18 21:13:01 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-18 21:13:01 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-18 21:13:01 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-18 21:13:02 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-18 21:13:03 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-18 21:13:03 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name securityUserDetailsService
+2026-01-18 21:13:03 [main] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:librarydb'
+2026-01-18 21:13:03 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-18 21:13:03 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-18 21:13:03 [main] [] INFO  com.libraryweb.LibraryApplication - Started LibraryApplication in 4.502 seconds (process running for 4.752)
+2026-01-18 21:13:08 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-18 21:13:08 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-18 21:13:08 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-01-18 21:13:08 [http-nio-8080-exec-1] [3cd822bd-50da-4185-b122-6baba51ac56e] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/index.html
+2026-01-18 21:13:08 [http-nio-8080-exec-1] [3cd822bd-50da-4185-b122-6baba51ac56e] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/index.html status=200 latency=47ms
+2026-01-18 21:13:08 [http-nio-8080-exec-6] [d8a89c8c-5595-4518-bf17-216dcc5d6053] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-01-18 21:13:08 [http-nio-8080-exec-3] [b1decd97-98d7-4d97-9585-96972cb499e7] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui-bundle.js
+2026-01-18 21:13:08 [http-nio-8080-exec-4] [19604ceb-d094-40c2-998a-e296b21f5499] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/index.css
+2026-01-18 21:13:09 [http-nio-8080-exec-8] [1aaab69b-e2aa-4076-b9a1-4acb003a2c8d] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-initializer.js
+2026-01-18 21:13:09 [http-nio-8080-exec-4] [19604ceb-d094-40c2-998a-e296b21f5499] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/index.css status=200 latency=4ms
+2026-01-18 21:13:09 [http-nio-8080-exec-2] [47452ff5-d31c-46e4-9b1c-083654f6aa9d] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui.css
+2026-01-18 21:13:09 [http-nio-8080-exec-6] [d8a89c8c-5595-4518-bf17-216dcc5d6053] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui-standalone-preset.js status=200 latency=4ms
+2026-01-18 21:13:09 [http-nio-8080-exec-2] [47452ff5-d31c-46e4-9b1c-083654f6aa9d] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui.css status=200 latency=11ms
+2026-01-18 21:13:09 [http-nio-8080-exec-3] [b1decd97-98d7-4d97-9585-96972cb499e7] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui-bundle.js status=200 latency=30ms
+2026-01-18 21:13:09 [http-nio-8080-exec-8] [1aaab69b-e2aa-4076-b9a1-4acb003a2c8d] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-initializer.js status=200 latency=55ms
+2026-01-18 21:13:09 [http-nio-8080-exec-5] [99e6c6ac-9a34-4962-9560-24942a016caf] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/favicon-32x32.png
+2026-01-18 21:13:09 [http-nio-8080-exec-7] [e5c57570-c579-4746-bac1-75fc4df0a3ed] INFO  c.l.filter.CorrelationFilter - Request Started: GET /v3/api-docs/swagger-config
+2026-01-18 21:13:09 [http-nio-8080-exec-5] [99e6c6ac-9a34-4962-9560-24942a016caf] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/favicon-32x32.png status=200 latency=4ms
+2026-01-18 21:13:09 [http-nio-8080-exec-7] [e5c57570-c579-4746-bac1-75fc4df0a3ed] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/v3/api-docs/swagger-config status=200 latency=49ms
+2026-01-18 21:13:09 [http-nio-8080-exec-9] [67c567e8-73e9-4247-b4e5-eb52fc259dc5] INFO  c.l.filter.CorrelationFilter - Request Started: GET /v3/api-docs
+2026-01-18 21:13:10 [http-nio-8080-exec-9] [67c567e8-73e9-4247-b4e5-eb52fc259dc5] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 635 ms
+2026-01-18 21:13:10 [http-nio-8080-exec-9] [67c567e8-73e9-4247-b4e5-eb52fc259dc5] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/v3/api-docs status=200 latency=711ms
+2026-01-18 21:14:20 [http-nio-8080-exec-3] [5c34b43c-4f7d-46a3-a462-ea9640a63169] INFO  c.l.filter.CorrelationFilter - Request Started: POST /books
+2026-01-18 21:14:20 [http-nio-8080-exec-3] [5c34b43c-4f7d-46a3-a462-ea9640a63169] INFO  com.libraryservice.BookService - Creating book: The Pragmatic Programmer
+2026-01-18 21:14:20 [http-nio-8080-exec-3] [5c34b43c-4f7d-46a3-a462-ea9640a63169] INFO  c.libraryservice.aop.LoggingAspect - BookResponse com.libraryservice.BookService.create(CreateBookRequest) executed in 22 ms
+2026-01-18 21:14:20 [http-nio-8080-exec-3] [5c34b43c-4f7d-46a3-a462-ea9640a63169] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/books status=201 latency=155ms
+2026-01-18 21:14:48 [http-nio-8080-exec-8] [b06d13f6-161b-4e3c-815e-3f2576b625c2] INFO  c.l.filter.CorrelationFilter - Request Started: PATCH /books/b85d9d60-6207-4e12-8677-b1967b83289a/catalog
+2026-01-18 21:14:48 [http-nio-8080-exec-8] [b06d13f6-161b-4e3c-815e-3f2576b625c2] INFO  com.libraryservice.BookService - Cataloging book b85d9d60-6207-4e12-8677-b1967b83289a
+2026-01-18 21:14:48 [http-nio-8080-exec-8] [b06d13f6-161b-4e3c-815e-3f2576b625c2] INFO  c.libraryservice.aop.LoggingAspect - BookResponse com.libraryservice.BookService.catalog(UUID) executed in 14 ms
+2026-01-18 21:14:48 [http-nio-8080-exec-8] [b06d13f6-161b-4e3c-815e-3f2576b625c2] INFO  c.l.filter.CorrelationFilter - Request Ended: method=PATCH path=/books/b85d9d60-6207-4e12-8677-b1967b83289a/catalog status=200 latency=42ms
+2026-01-18 21:15:10 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-18 21:15:10 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-18 21:15:10 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-18 21:15:10 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-18 21:15:10 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-18 21:15:27 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-01-18 21:15:27 [main] [] INFO  com.libraryweb.LibraryApplication - Starting LibraryApplication using Java 21.0.9 with PID 16648 (C:\Users\adity\Downloads\library-parent\library-web\target\classes started by adity in C:\Users\adity\Downloads\library-parent)
+2026-01-18 21:15:27 [main] [] INFO  com.libraryweb.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-18 21:15:27 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-18 21:15:27 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2026-01-18 21:15:28 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-18 21:15:28 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-18 21:15:28 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-18 21:15:28 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-01-18 21:15:28 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-18 21:15:28 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1243 ms
+2026-01-18 21:15:28 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-18 21:15:28 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-01-18 21:15:29 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-18 21:15:29 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-18 21:15:29 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-18 21:15:29 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2026-01-18 21:15:29 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-18 21:15:29 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-18 21:15:29 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-18 21:15:32 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-18 21:15:32 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-18 21:15:32 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-18 21:15:33 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-18 21:15:33 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name securityUserDetailsService
+2026-01-18 21:15:34 [main] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:librarydb'
+2026-01-18 21:15:34 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-18 21:15:34 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-18 21:15:34 [main] [] INFO  com.libraryweb.LibraryApplication - Started LibraryApplication in 7.551 seconds (process running for 7.795)
+2026-01-18 21:15:35 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-18 21:15:35 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-18 21:15:35 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-18 21:15:35 [http-nio-8080-exec-1] [0d7d96ba-8b99-4134-9f70-45d31e5e7b9c] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/index.html
+2026-01-18 21:15:35 [http-nio-8080-exec-1] [0d7d96ba-8b99-4134-9f70-45d31e5e7b9c] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/index.html status=200 latency=65ms
+2026-01-18 21:15:36 [http-nio-8080-exec-2] [e63cff33-7cdf-4645-ab14-b49c606699f4] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui.css
+2026-01-18 21:15:36 [http-nio-8080-exec-6] [d898f1c1-75ef-4100-80fe-aea5bded11b6] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-initializer.js
+2026-01-18 21:15:36 [http-nio-8080-exec-3] [44a07344-e6ab-412f-92a7-9b82fc957573] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/index.css
+2026-01-18 21:15:36 [http-nio-8080-exec-4] [65b7a8f2-21a5-42b7-b4ee-fea817780311] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui-bundle.js
+2026-01-18 21:15:36 [http-nio-8080-exec-5] [0abf82bd-dc19-48c1-b2f5-b5ee83335dfe] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-01-18 21:15:36 [http-nio-8080-exec-3] [44a07344-e6ab-412f-92a7-9b82fc957573] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/index.css status=200 latency=0ms
+2026-01-18 21:15:36 [http-nio-8080-exec-2] [e63cff33-7cdf-4645-ab14-b49c606699f4] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui.css status=200 latency=0ms
+2026-01-18 21:15:36 [http-nio-8080-exec-5] [0abf82bd-dc19-48c1-b2f5-b5ee83335dfe] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui-standalone-preset.js status=200 latency=16ms
+2026-01-18 21:15:36 [http-nio-8080-exec-4] [65b7a8f2-21a5-42b7-b4ee-fea817780311] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui-bundle.js status=200 latency=33ms
+2026-01-18 21:15:36 [http-nio-8080-exec-6] [d898f1c1-75ef-4100-80fe-aea5bded11b6] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-initializer.js status=200 latency=50ms
+2026-01-18 21:15:36 [http-nio-8080-exec-7] [2f72f27f-8366-45d0-9ea1-858d48d484d7] INFO  c.l.filter.CorrelationFilter - Request Started: GET /v3/api-docs/swagger-config
+2026-01-18 21:15:36 [http-nio-8080-exec-9] [3bf4c11f-0afb-47be-acbb-4838e7956294] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/favicon-32x32.png
+2026-01-18 21:15:36 [http-nio-8080-exec-9] [3bf4c11f-0afb-47be-acbb-4838e7956294] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/favicon-32x32.png status=200 latency=4ms
+2026-01-18 21:15:36 [http-nio-8080-exec-7] [2f72f27f-8366-45d0-9ea1-858d48d484d7] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/v3/api-docs/swagger-config status=200 latency=54ms
+2026-01-18 21:15:36 [http-nio-8080-exec-8] [a053e55a-964b-48e4-aeac-1848f2115ceb] INFO  c.l.filter.CorrelationFilter - Request Started: GET /v3/api-docs
+2026-01-18 21:15:37 [http-nio-8080-exec-8] [a053e55a-964b-48e4-aeac-1848f2115ceb] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 566 ms
+2026-01-18 21:15:37 [http-nio-8080-exec-8] [a053e55a-964b-48e4-aeac-1848f2115ceb] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/v3/api-docs status=200 latency=622ms
+2026-01-18 21:16:36 [http-nio-8080-exec-10] [8d369c4f-3a98-420d-a1c9-9701a83dd088] INFO  c.l.filter.CorrelationFilter - Request Started: POST /loans/3fa85f64-5717-4562-b3fc-2c963f66afa6/return
+2026-01-18 21:16:36 [http-nio-8080-exec-10] [8d369c4f-3a98-420d-a1c9-9701a83dd088] INFO  com.libraryservice.LoanService - User john returning book 3fa85f64-5717-4562-b3fc-2c963f66afa6
+2026-01-18 21:16:36 [http-nio-8080-exec-10] [8d369c4f-3a98-420d-a1c9-9701a83dd088] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/loans/3fa85f64-5717-4562-b3fc-2c963f66afa6/return status=200 latency=17ms
+2026-01-18 21:16:36 [http-nio-8080-exec-10] [] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Book not found] with root cause
+java.lang.IllegalArgumentException: Book not found
+	at com.libraryservice.LoanService.lambda$returnBook$2(LoanService.java:54)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.libraryservice.LoanService.returnBook(LoanService.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.libraryservice.aop.LoggingAspect.logTime(LoggingAspect.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:638)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:628)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.libraryservice.LoanService$$SpringCGLIB$$0.returnBook(<generated>)
+	at com.libraryweb.controller.LoanController.returnBook(LoanController.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at com.libraryweb.filter.CorrelationFilter.doFilter(CorrelationFilter.java:37)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-01-18 21:18:04 [http-nio-8080-exec-4] [1cc16adc-252c-4d2e-bb06-9e78037615d0] INFO  c.l.filter.CorrelationFilter - Request Started: POST /books
+2026-01-18 21:18:05 [http-nio-8080-exec-4] [1cc16adc-252c-4d2e-bb06-9e78037615d0] INFO  com.libraryservice.BookService - Creating book: My Real Book
+2026-01-18 21:18:05 [http-nio-8080-exec-4] [1cc16adc-252c-4d2e-bb06-9e78037615d0] INFO  c.libraryservice.aop.LoggingAspect - BookResponse com.libraryservice.BookService.create(CreateBookRequest) executed in 15 ms
+2026-01-18 21:18:05 [http-nio-8080-exec-4] [1cc16adc-252c-4d2e-bb06-9e78037615d0] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/books status=201 latency=145ms
+2026-01-18 21:18:27 [http-nio-8080-exec-6] [d115402f-18c2-4e7c-8baf-2ab8a8a9f89f] INFO  c.l.filter.CorrelationFilter - Request Started: PATCH /books/fc7b67d9-e1cb-4eab-a02e-fa3f36d60fe8/catalog
+2026-01-18 21:18:27 [http-nio-8080-exec-6] [d115402f-18c2-4e7c-8baf-2ab8a8a9f89f] INFO  com.libraryservice.BookService - Cataloging book fc7b67d9-e1cb-4eab-a02e-fa3f36d60fe8
+2026-01-18 21:18:27 [http-nio-8080-exec-6] [d115402f-18c2-4e7c-8baf-2ab8a8a9f89f] INFO  c.libraryservice.aop.LoggingAspect - BookResponse com.libraryservice.BookService.catalog(UUID) executed in 3 ms
+2026-01-18 21:18:27 [http-nio-8080-exec-6] [d115402f-18c2-4e7c-8baf-2ab8a8a9f89f] INFO  c.l.filter.CorrelationFilter - Request Ended: method=PATCH path=/books/fc7b67d9-e1cb-4eab-a02e-fa3f36d60fe8/catalog status=200 latency=23ms
+2026-01-18 21:19:00 [http-nio-8080-exec-9] [cb4af437-b07c-42b4-86dc-bbf6ff713b0f] INFO  c.l.filter.CorrelationFilter - Request Started: POST /loans/fc7b67d9-e1cb-4eab-a02e-fa3f36d60fe8/borrow
+2026-01-18 21:19:00 [http-nio-8080-exec-9] [cb4af437-b07c-42b4-86dc-bbf6ff713b0f] INFO  com.libraryservice.LoanService - User john borrowing book fc7b67d9-e1cb-4eab-a02e-fa3f36d60fe8
+2026-01-18 21:19:00 [http-nio-8080-exec-9] [cb4af437-b07c-42b4-86dc-bbf6ff713b0f] INFO  c.libraryservice.aop.LoggingAspect - LoanResponse com.libraryservice.LoanService.borrowBook(UUID,String) executed in 22 ms
+2026-01-18 21:19:00 [http-nio-8080-exec-9] [cb4af437-b07c-42b4-86dc-bbf6ff713b0f] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/loans/fc7b67d9-e1cb-4eab-a02e-fa3f36d60fe8/borrow status=201 latency=36ms
+2026-01-18 21:19:21 [http-nio-8080-exec-7] [5424c269-7f80-4d82-867a-0091ce256926] INFO  c.l.filter.CorrelationFilter - Request Started: POST /loans/fc7b67d9-e1cb-4eab-a02e-fa3f36d60fe8/return
+2026-01-18 21:19:21 [http-nio-8080-exec-7] [5424c269-7f80-4d82-867a-0091ce256926] INFO  com.libraryservice.LoanService - User john returning book fc7b67d9-e1cb-4eab-a02e-fa3f36d60fe8
+2026-01-18 21:19:21 [http-nio-8080-exec-7] [5424c269-7f80-4d82-867a-0091ce256926] INFO  c.libraryservice.aop.LoggingAspect - void com.libraryservice.LoanService.returnBook(UUID,String) executed in 19 ms
+2026-01-18 21:19:21 [http-nio-8080-exec-7] [5424c269-7f80-4d82-867a-0091ce256926] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/loans/fc7b67d9-e1cb-4eab-a02e-fa3f36d60fe8/return status=200 latency=25ms
+2026-01-18 21:19:50 [http-nio-8080-exec-8] [ff28cc86-5984-4aaa-adb0-31ca7d7eb9e8] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console
+2026-01-18 21:19:50 [http-nio-8080-exec-8] [ff28cc86-5984-4aaa-adb0-31ca7d7eb9e8] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console status=302 latency=1ms
+2026-01-18 21:19:50 [http-nio-8080-exec-10] [4d5a16a7-5f6e-4e8f-9bfd-0b5636a44e39] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/
+2026-01-18 21:19:50 [http-nio-8080-exec-10] [4d5a16a7-5f6e-4e8f-9bfd-0b5636a44e39] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/ status=200 latency=28ms
+2026-01-18 21:19:51 [http-nio-8080-exec-1] [03b1ad4b-68e4-4450-a08d-d0e1ca2bfb98] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:19:51 [http-nio-8080-exec-1] [03b1ad4b-68e4-4450-a08d-d0e1ca2bfb98] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=200 latency=18ms
+2026-01-18 21:19:51 [http-nio-8080-exec-3] [de907600-68b4-448d-bdee-20d462d23b75] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/login.jsp
+2026-01-18 21:19:51 [http-nio-8080-exec-3] [de907600-68b4-448d-bdee-20d462d23b75] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/login.jsp status=200 latency=0ms
+2026-01-18 21:19:51 [http-nio-8080-exec-2] [ea341268-53f4-49e6-9e79-80c4673e856e] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/background.gif
+2026-01-18 21:19:51 [http-nio-8080-exec-2] [ea341268-53f4-49e6-9e79-80c4673e856e] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/background.gif status=200 latency=0ms
+2026-01-18 21:19:51 [http-nio-8080-exec-5] [f1ca156d-c9a3-4c80-98f7-c7b0d7f0c6c4] INFO  c.l.filter.CorrelationFilter - Request Started: GET /favicon.ico
+2026-01-18 21:19:51 [http-nio-8080-exec-5] [f1ca156d-c9a3-4c80-98f7-c7b0d7f0c6c4] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/favicon.ico status=404 latency=20ms
+2026-01-18 21:20:07 [http-nio-8080-exec-4] [041db9dd-109b-4d7c-8d97-f31f16ef0f1c] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/login.do
+2026-01-18 21:20:07 [http-nio-8080-exec-4] [041db9dd-109b-4d7c-8d97-f31f16ef0f1c] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/login.do status=200 latency=7ms
+2026-01-18 21:20:07 [http-nio-8080-exec-6] [e072349b-2eb8-4c8d-8238-bfe0b2f7b6c3] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:20:07 [http-nio-8080-exec-6] [e072349b-2eb8-4c8d-8238-bfe0b2f7b6c3] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=3ms
+2026-01-18 21:20:35 [http-nio-8080-exec-9] [c6282ece-9f37-41f3-974a-d574cb9abd55] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/login.do
+2026-01-18 21:20:35 [http-nio-8080-exec-9] [c6282ece-9f37-41f3-974a-d574cb9abd55] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/login.do status=200 latency=11ms
+2026-01-18 21:20:35 [http-nio-8080-exec-10] [5f213887-07f0-45a3-bc0c-979166fe1a49] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/query.jsp
+2026-01-18 21:20:35 [http-nio-8080-exec-8] [07105cb7-066b-4c2d-8408-5e9da7fcc7d2] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tables.do
+2026-01-18 21:20:35 [http-nio-8080-exec-3] [e0127b86-4baa-41fb-91e5-e10b44015dc2] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:20:35 [http-nio-8080-exec-1] [ac75c8b1-0927-43cc-8c65-a1b2e4ecf970] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/help.jsp
+2026-01-18 21:20:35 [http-nio-8080-exec-3] [e0127b86-4baa-41fb-91e5-e10b44015dc2] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=0ms
+2026-01-18 21:20:35 [http-nio-8080-exec-1] [ac75c8b1-0927-43cc-8c65-a1b2e4ecf970] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/help.jsp status=200 latency=2ms
+2026-01-18 21:20:35 [http-nio-8080-exec-10] [5f213887-07f0-45a3-bc0c-979166fe1a49] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/query.jsp status=200 latency=4ms
+2026-01-18 21:20:35 [http-nio-8080-exec-7] [1e519036-1283-48bf-a54a-9b70887c5bad] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/header.jsp
+2026-01-18 21:20:35 [http-nio-8080-exec-7] [1e519036-1283-48bf-a54a-9b70887c5bad] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/header.jsp status=200 latency=0ms
+2026-01-18 21:20:35 [http-nio-8080-exec-8] [07105cb7-066b-4c2d-8408-5e9da7fcc7d2] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tables.do status=200 latency=60ms
+2026-01-18 21:20:44 [http-nio-8080-exec-2] [056b9944-e14a-4e9e-bb38-0112953c7e7f] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/login.do
+2026-01-18 21:20:44 [http-nio-8080-exec-2] [056b9944-e14a-4e9e-bb38-0112953c7e7f] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/login.do status=200 latency=39ms
+2026-01-18 21:20:44 [http-nio-8080-exec-4] [cc89c7fb-d000-4a6c-a787-3c845885d073] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tables.do
+2026-01-18 21:20:44 [http-nio-8080-exec-5] [8215496d-3102-4891-a4f1-e26b8996d643] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/header.jsp
+2026-01-18 21:20:44 [http-nio-8080-exec-6] [b839e82a-8260-47c0-a46a-ff4093816897] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/query.jsp
+2026-01-18 21:20:44 [http-nio-8080-exec-9] [77ea134c-0a2c-40c8-bcd9-2f9de7b96bc7] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/help.jsp
+2026-01-18 21:20:44 [http-nio-8080-exec-5] [8215496d-3102-4891-a4f1-e26b8996d643] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/header.jsp status=200 latency=0ms
+2026-01-18 21:20:44 [http-nio-8080-exec-9] [77ea134c-0a2c-40c8-bcd9-2f9de7b96bc7] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/help.jsp status=200 latency=0ms
+2026-01-18 21:20:44 [http-nio-8080-exec-6] [b839e82a-8260-47c0-a46a-ff4093816897] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/query.jsp status=200 latency=1ms
+2026-01-18 21:20:44 [http-nio-8080-exec-4] [cc89c7fb-d000-4a6c-a787-3c845885d073] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tables.do status=200 latency=21ms
+2026-01-18 21:20:52 [http-nio-8080-exec-3] [af11e59a-d343-46f2-9227-d53e6b415275] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/test.do
+2026-01-18 21:20:52 [http-nio-8080-exec-3] [af11e59a-d343-46f2-9227-d53e6b415275] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/test.do status=200 latency=7ms
+2026-01-18 21:20:52 [http-nio-8080-exec-1] [d273dbcf-cce4-4fc7-af10-f91bb12aa27d] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:20:52 [http-nio-8080-exec-1] [d273dbcf-cce4-4fc7-af10-f91bb12aa27d] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=0ms
+2026-01-18 21:20:55 [http-nio-8080-exec-10] [5d68e428-ca76-4f14-81c2-c38032cc7d14] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/login.do
+2026-01-18 21:20:55 [http-nio-8080-exec-10] [5d68e428-ca76-4f14-81c2-c38032cc7d14] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/login.do status=200 latency=40ms
+2026-01-18 21:20:55 [http-nio-8080-exec-8] [807c52d6-e631-4456-9534-8ff8bf2fc99d] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tables.do
+2026-01-18 21:20:55 [http-nio-8080-exec-7] [5d8311e2-c68f-4957-aa35-5b1c211b93e0] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/header.jsp
+2026-01-18 21:20:55 [http-nio-8080-exec-5] [b60a4fe7-ff45-4be6-8e21-67221014c035] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/help.jsp
+2026-01-18 21:20:55 [http-nio-8080-exec-5] [b60a4fe7-ff45-4be6-8e21-67221014c035] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/help.jsp status=200 latency=1ms
+2026-01-18 21:20:55 [http-nio-8080-exec-7] [5d8311e2-c68f-4957-aa35-5b1c211b93e0] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/header.jsp status=200 latency=0ms
+2026-01-18 21:20:55 [http-nio-8080-exec-2] [6bf0d512-df2a-441c-ad8b-fad95d7852f7] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/query.jsp
+2026-01-18 21:20:55 [http-nio-8080-exec-2] [6bf0d512-df2a-441c-ad8b-fad95d7852f7] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/query.jsp status=200 latency=1ms
+2026-01-18 21:20:55 [http-nio-8080-exec-8] [807c52d6-e631-4456-9534-8ff8bf2fc99d] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tables.do status=200 latency=22ms
+2026-01-18 21:21:02 [http-nio-8080-exec-9] [7cde9ce7-d69d-4c7d-8584-75447850d27f] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/test.do
+2026-01-18 21:21:02 [http-nio-8080-exec-9] [7cde9ce7-d69d-4c7d-8584-75447850d27f] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/test.do status=200 latency=2ms
+2026-01-18 21:21:02 [http-nio-8080-exec-6] [e06c3385-bd56-4505-a128-6ae118bd6433] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:21:02 [http-nio-8080-exec-6] [e06c3385-bd56-4505-a128-6ae118bd6433] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=0ms
+2026-01-18 21:22:00 [http-nio-8080-exec-7] [83f5d5c9-c2cf-4d6f-8d94-e626884ef039] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/test.do
+2026-01-18 21:22:00 [http-nio-8080-exec-7] [83f5d5c9-c2cf-4d6f-8d94-e626884ef039] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/test.do status=200 latency=5ms
+2026-01-18 21:22:00 [http-nio-8080-exec-2] [fc6b3c4f-edde-4edf-97aa-9719c4add776] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:22:00 [http-nio-8080-exec-2] [fc6b3c4f-edde-4edf-97aa-9719c4add776] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=0ms
+2026-01-18 21:22:40 [http-nio-8080-exec-8] [2bbc5859-72d0-49f6-a12b-c1499bc6d971] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/test.do
+2026-01-18 21:22:40 [http-nio-8080-exec-8] [2bbc5859-72d0-49f6-a12b-c1499bc6d971] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/test.do status=200 latency=3ms
+2026-01-18 21:22:40 [http-nio-8080-exec-9] [0f8f873f-c588-4684-bf1e-0947833890e7] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:22:40 [http-nio-8080-exec-9] [0f8f873f-c588-4684-bf1e-0947833890e7] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=0ms
+2026-01-18 21:22:41 [http-nio-8080-exec-6] [be794286-9b9e-4c32-8f5a-5a5b49f668cc] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/background.gif
+2026-01-18 21:22:41 [http-nio-8080-exec-6] [be794286-9b9e-4c32-8f5a-5a5b49f668cc] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/background.gif status=304 latency=0ms
+2026-01-18 21:22:43 [http-nio-8080-exec-4] [e23313b7-9fec-4331-82e6-a2ffe34b7e30] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/login.do
+2026-01-18 21:22:43 [http-nio-8080-exec-4] [e23313b7-9fec-4331-82e6-a2ffe34b7e30] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/login.do status=200 latency=34ms
+2026-01-18 21:22:43 [http-nio-8080-exec-5] [5613a095-6351-4f1a-905d-7448f5c83153] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tables.do
+2026-01-18 21:22:43 [http-nio-8080-exec-3] [938b120b-6912-4bb8-8021-bbc1568cd002] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/query.jsp
+2026-01-18 21:22:43 [http-nio-8080-exec-10] [5651caf2-df22-4a09-bf13-73fbb500b30b] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/header.jsp
+2026-01-18 21:22:43 [http-nio-8080-exec-1] [9adb3c0e-e55a-4afd-a78f-31b0a814007e] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/help.jsp
+2026-01-18 21:22:43 [http-nio-8080-exec-10] [5651caf2-df22-4a09-bf13-73fbb500b30b] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/header.jsp status=200 latency=1ms
+2026-01-18 21:22:43 [http-nio-8080-exec-1] [9adb3c0e-e55a-4afd-a78f-31b0a814007e] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/help.jsp status=200 latency=1ms
+2026-01-18 21:22:43 [http-nio-8080-exec-3] [938b120b-6912-4bb8-8021-bbc1568cd002] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/query.jsp status=200 latency=1ms
+2026-01-18 21:22:43 [http-nio-8080-exec-5] [5613a095-6351-4f1a-905d-7448f5c83153] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tables.do status=200 latency=19ms
+2026-01-18 21:22:46 [http-nio-8080-exec-7] [51d43924-1f30-4e15-b3b2-65c3cd2e4156] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/test.do
+2026-01-18 21:22:46 [http-nio-8080-exec-7] [51d43924-1f30-4e15-b3b2-65c3cd2e4156] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/test.do status=200 latency=0ms
+2026-01-18 21:22:55 [http-nio-8080-exec-2] [7faeb27a-5cf3-4b3c-b7e9-e3ff747193e0] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/login.do
+2026-01-18 21:22:55 [http-nio-8080-exec-2] [7faeb27a-5cf3-4b3c-b7e9-e3ff747193e0] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/login.do status=200 latency=32ms
+2026-01-18 21:22:55 [http-nio-8080-exec-6] [49c57529-a85c-4aaa-ab8f-85372006d21b] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/query.jsp
+2026-01-18 21:22:55 [http-nio-8080-exec-1] [1c75c7ac-4496-413a-870a-f588371ac4c9] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:22:55 [http-nio-8080-exec-1] [1c75c7ac-4496-413a-870a-f588371ac4c9] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=0ms
+2026-01-18 21:22:55 [http-nio-8080-exec-9] [76362ff3-beac-44cf-88e9-40d553d7ecc9] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tables.do
+2026-01-18 21:22:55 [http-nio-8080-exec-4] [aae29ba8-70d2-4c9b-a6ae-80a0ae91a696] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/help.jsp
+2026-01-18 21:22:55 [http-nio-8080-exec-6] [49c57529-a85c-4aaa-ab8f-85372006d21b] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/query.jsp status=200 latency=0ms
+2026-01-18 21:22:55 [http-nio-8080-exec-4] [aae29ba8-70d2-4c9b-a6ae-80a0ae91a696] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/help.jsp status=200 latency=0ms
+2026-01-18 21:22:55 [http-nio-8080-exec-8] [637c46ea-ab91-42fc-935a-546f6161e8ed] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/header.jsp
+2026-01-18 21:22:55 [http-nio-8080-exec-8] [637c46ea-ab91-42fc-935a-546f6161e8ed] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/header.jsp status=200 latency=0ms
+2026-01-18 21:22:55 [http-nio-8080-exec-9] [76362ff3-beac-44cf-88e9-40d553d7ecc9] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tables.do status=200 latency=36ms
+2026-01-18 21:24:29 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-18 21:24:29 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-18 21:24:29 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-18 21:24:29 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-18 21:24:29 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-18 21:25:06 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-01-18 21:25:06 [main] [] INFO  com.libraryweb.LibraryApplication - Starting LibraryApplication using Java 21.0.9 with PID 22564 (C:\Users\adity\Downloads\library-parent\library-web\target\classes started by adity in C:\Users\adity\Downloads\library-parent)
+2026-01-18 21:25:06 [main] [] INFO  com.libraryweb.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-18 21:25:07 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-18 21:25:07 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2026-01-18 21:25:07 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-18 21:25:07 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-18 21:25:07 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-18 21:25:07 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-01-18 21:25:07 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-18 21:25:07 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1220 ms
+2026-01-18 21:25:07 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-18 21:25:08 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-01-18 21:25:08 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-18 21:25:08 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-18 21:25:08 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-18 21:25:08 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2026-01-18 21:25:08 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-18 21:25:08 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-18 21:25:08 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-18 21:25:09 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-18 21:25:09 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-18 21:25:09 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-18 21:25:10 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-18 21:25:10 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name securityUserDetailsService
+2026-01-18 21:25:10 [main] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:librarydb'
+2026-01-18 21:25:10 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-18 21:25:10 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-18 21:25:10 [main] [] INFO  com.libraryweb.LibraryApplication - Started LibraryApplication in 4.668 seconds (process running for 4.909)
+2026-01-18 21:25:17 [http-nio-8080-exec-1] [c4d48248-83ff-4209-ab9c-c91254328706] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/login.do
+2026-01-18 21:25:17 [http-nio-8080-exec-1] [c4d48248-83ff-4209-ab9c-c91254328706] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/login.do status=200 latency=23ms
+2026-01-18 21:25:17 [http-nio-8080-exec-3] [e6b8f1c3-3274-44bd-b5a9-a260e206a4e9] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:25:17 [http-nio-8080-exec-3] [e6b8f1c3-3274-44bd-b5a9-a260e206a4e9] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=200 latency=19ms
+2026-01-18 21:25:17 [http-nio-8080-exec-4] [6d91a0e2-3f03-4ddc-84f3-8d728f42cafa] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/login.jsp
+2026-01-18 21:25:17 [http-nio-8080-exec-4] [6d91a0e2-3f03-4ddc-84f3-8d728f42cafa] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/login.jsp status=200 latency=16ms
+2026-01-18 21:25:17 [http-nio-8080-exec-9] [5167c36e-d479-475f-af38-1ee74798a427] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/background.gif
+2026-01-18 21:25:17 [http-nio-8080-exec-9] [5167c36e-d479-475f-af38-1ee74798a427] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/background.gif status=200 latency=18ms
+2026-01-18 21:25:20 [http-nio-8080-exec-8] [3abc38b8-72e8-4d1d-a7b1-5314c12b68f8] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/test.do
+2026-01-18 21:25:20 [http-nio-8080-exec-8] [3abc38b8-72e8-4d1d-a7b1-5314c12b68f8] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/test.do status=200 latency=6ms
+2026-01-18 21:25:21 [http-nio-8080-exec-5] [17a743cb-9bb7-44e5-8769-40cacd5a2238] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/login.do
+2026-01-18 21:25:21 [http-nio-8080-exec-5] [17a743cb-9bb7-44e5-8769-40cacd5a2238] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/login.do status=200 latency=3ms
+2026-01-18 21:25:21 [http-nio-8080-exec-7] [1c78de48-7163-4efc-affa-efc6761b077b] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/help.jsp
+2026-01-18 21:25:21 [http-nio-8080-exec-2] [61c335be-ab36-4f21-950a-168ce01860f3] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tables.do
+2026-01-18 21:25:21 [http-nio-8080-exec-7] [1c78de48-7163-4efc-affa-efc6761b077b] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/help.jsp status=200 latency=2ms
+2026-01-18 21:25:21 [http-nio-8080-exec-10] [853a7a08-4dc5-454c-a3d1-094994d51fe7] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/query.jsp
+2026-01-18 21:25:21 [http-nio-8080-exec-10] [853a7a08-4dc5-454c-a3d1-094994d51fe7] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/query.jsp status=200 latency=2ms
+2026-01-18 21:25:21 [http-nio-8080-exec-6] [709ca002-fc23-4ff6-ae76-256509137f9f] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/header.jsp
+2026-01-18 21:25:21 [http-nio-8080-exec-6] [709ca002-fc23-4ff6-ae76-256509137f9f] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/header.jsp status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-2] [61c335be-ab36-4f21-950a-168ce01860f3] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tables.do status=200 latency=61ms
+2026-01-18 21:25:21 [http-nio-8080-exec-8] [5a41aadb-47ad-4e7c-a6ac-2eb86483dd7a] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_disconnect.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-3] [2eae9d38-4714-49b3-b0d5-aae353f792dd] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_history.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-9] [118fe1dd-9c23-478a-bb62-e41c03e82363] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_run_selected.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-3] [2eae9d38-4714-49b3-b0d5-aae353f792dd] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_history.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-8] [5a41aadb-47ad-4e7c-a6ac-2eb86483dd7a] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_disconnect.gif status=200 latency=2ms
+2026-01-18 21:25:21 [http-nio-8080-exec-9] [118fe1dd-9c23-478a-bb62-e41c03e82363] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_run_selected.gif status=200 latency=2ms
+2026-01-18 21:25:21 [http-nio-8080-exec-4] [f39ba402-546b-494c-88b4-63e3b727dd9e] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_run.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-1] [f71be52d-6ed8-4510-b28e-04ff8272bca3] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_help.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-4] [f39ba402-546b-494c-88b4-63e3b727dd9e] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_run.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-1] [f71be52d-6ed8-4510-b28e-04ff8272bca3] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_help.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-5] [f0aad48e-5683-4d4d-a5f5-e76ab4c3fdc4] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_refresh.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-5] [f0aad48e-5683-4d4d-a5f5-e76ab4c3fdc4] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_refresh.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-7] [d07ec707-2707-44d7-ac32-e6a1b05dcc76] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_rollback.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-6] [2966bd49-9801-4c79-a9b0-b292e4a1b5ab] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_stop.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-1] [a9e998c0-e6fe-4f4a-b537-04a43450891a] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_commit.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-1] [a9e998c0-e6fe-4f4a-b537-04a43450891a] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_commit.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-7] [d07ec707-2707-44d7-ac32-e6a1b05dcc76] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_rollback.gif status=200 latency=2ms
+2026-01-18 21:25:21 [http-nio-8080-exec-8] [2e145c2a-695b-43a5-bcbb-566a1cb707b6] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_line.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-2] [d2821a65-90e2-45ad-bd2d-356d618910cc] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree.js
+2026-01-18 21:25:21 [http-nio-8080-exec-6] [2966bd49-9801-4c79-a9b0-b292e4a1b5ab] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_stop.gif status=200 latency=3ms
+2026-01-18 21:25:21 [http-nio-8080-exec-2] [d2821a65-90e2-45ad-bd2d-356d618910cc] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree.js status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-8] [2e145c2a-695b-43a5-bcbb-566a1cb707b6] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_line.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-3] [04205938-e119-458c-acf7-88df7a86c909] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_minus.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-7] [54168994-8cdc-426a-936c-f8f727ed18ba] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_column.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-10] [357b277e-b4e5-4f2f-9a73-fd6581a5ab09] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_table.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-5] [1a370f08-e614-4049-9332-667252743de3] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_empty.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-7] [54168994-8cdc-426a-936c-f8f727ed18ba] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_column.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-3] [04205938-e119-458c-acf7-88df7a86c909] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_minus.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-10] [357b277e-b4e5-4f2f-9a73-fd6581a5ab09] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_table.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-9] [3c487a68-1a8e-4331-8069-bac56e7c623b] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_plus.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-4] [efd6241a-1d9c-4b98-aea3-49559462a258] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_database.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-4] [efd6241a-1d9c-4b98-aea3-49559462a258] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_database.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-5] [1a370f08-e614-4049-9332-667252743de3] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_empty.gif status=200 latency=2ms
+2026-01-18 21:25:21 [http-nio-8080-exec-9] [3c487a68-1a8e-4331-8069-bac56e7c623b] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_plus.gif status=200 latency=2ms
+2026-01-18 21:25:21 [http-nio-8080-exec-1] [dbdb47c5-95d5-4904-8c2d-a31844415de2] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_folder.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-1] [dbdb47c5-95d5-4904-8c2d-a31844415de2] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_folder.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-2] [e844d1ff-6ca0-44d0-b601-0fcc4686816c] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_index_az.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-6] [c37e7d21-75f5-407a-bec6-36ee8b10d719] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_type.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-2] [e844d1ff-6ca0-44d0-b601-0fcc4686816c] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_index_az.gif status=200 latency=0ms
+2026-01-18 21:25:21 [http-nio-8080-exec-3] [83e4819b-4b11-44c4-9a77-bdb28cd87312] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_users.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-8] [ee17fc23-1f13-4b00-a87f-10b42e3e9357] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_index.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-6] [c37e7d21-75f5-407a-bec6-36ee8b10d719] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_type.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-7] [46f1679a-3a62-4db1-815e-817d06696031] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_view.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-3] [83e4819b-4b11-44c4-9a77-bdb28cd87312] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_users.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-8] [ee17fc23-1f13-4b00-a87f-10b42e3e9357] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_index.gif status=200 latency=1ms
+2026-01-18 21:25:21 [http-nio-8080-exec-7] [46f1679a-3a62-4db1-815e-817d06696031] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_view.gif status=200 latency=2ms
+2026-01-18 21:25:21 [http-nio-8080-exec-5] [3dc33116-b3bf-4e33-9579-142aecdc211f] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_info.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-10] [09c67e21-5e1c-47d3-8e6e-5e33558cd9e9] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_user.gif
+2026-01-18 21:25:21 [http-nio-8080-exec-10] [09c67e21-5e1c-47d3-8e6e-5e33558cd9e9] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_user.gif status=200 latency=0ms
+2026-01-18 21:25:21 [http-nio-8080-exec-5] [3dc33116-b3bf-4e33-9579-142aecdc211f] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_info.gif status=200 latency=0ms
+2026-01-18 21:25:34 [http-nio-8080-exec-4] [fb7ce452-7ac3-47ba-bbd4-584fdb5ffda5] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/query.do
+2026-01-18 21:25:34 [http-nio-8080-exec-4] [fb7ce452-7ac3-47ba-bbd4-584fdb5ffda5] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/query.do status=200 latency=16ms
+2026-01-18 21:25:34 [http-nio-8080-exec-1] [f0c9a35d-a416-4a30-8e0f-d7cbdd318287] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/table.js
+2026-01-18 21:25:34 [http-nio-8080-exec-9] [09140678-0ad2-403d-b69d-e351e8692d4b] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:25:34 [http-nio-8080-exec-9] [09140678-0ad2-403d-b69d-e351e8692d4b] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=0ms
+2026-01-18 21:25:34 [http-nio-8080-exec-1] [f0c9a35d-a416-4a30-8e0f-d7cbdd318287] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/table.js status=200 latency=0ms
+2026-01-18 21:25:41 [http-nio-8080-exec-2] [282fd250-7502-4313-9602-3d38ccd1e30d] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/query.do
+2026-01-18 21:25:41 [http-nio-8080-exec-2] [282fd250-7502-4313-9602-3d38ccd1e30d] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/query.do status=200 latency=0ms
+2026-01-18 21:25:48 [http-nio-8080-exec-6] [f09abac3-3c18-4be8-9032-881972ee8bd9] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/query.do
+2026-01-18 21:25:48 [http-nio-8080-exec-6] [f09abac3-3c18-4be8-9032-881972ee8bd9] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/query.do status=200 latency=0ms
+2026-01-18 21:25:48 [http-nio-8080-exec-8] [a77ddadd-9aee-4939-88bf-6a950be8ef67] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/table.js
+2026-01-18 21:25:48 [http-nio-8080-exec-8] [a77ddadd-9aee-4939-88bf-6a950be8ef67] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/table.js status=304 latency=0ms
+2026-01-18 21:25:48 [http-nio-8080-exec-3] [9377ec46-0b19-442a-882a-adade93676b4] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:25:48 [http-nio-8080-exec-3] [9377ec46-0b19-442a-882a-adade93676b4] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=0ms
+2026-01-18 21:25:57 [http-nio-8080-exec-7] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-18 21:25:57 [http-nio-8080-exec-7] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-18 21:25:57 [http-nio-8080-exec-7] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-01-18 21:26:10 [http-nio-8080-exec-10] [d746e37c-216c-4f96-a117-6ce28e30df71] INFO  c.l.filter.CorrelationFilter - Request Started: POST /books
+2026-01-18 21:26:11 [http-nio-8080-exec-10] [d746e37c-216c-4f96-a117-6ce28e30df71] INFO  com.libraryservice.BookService - Creating book: My Real Book
+2026-01-18 21:26:11 [http-nio-8080-exec-10] [d746e37c-216c-4f96-a117-6ce28e30df71] INFO  c.libraryservice.aop.LoggingAspect - BookResponse com.libraryservice.BookService.create(CreateBookRequest) executed in 18 ms
+2026-01-18 21:26:11 [http-nio-8080-exec-10] [d746e37c-216c-4f96-a117-6ce28e30df71] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/books status=201 latency=317ms
+2026-01-18 21:26:17 [http-nio-8080-exec-5] [ab0500a9-6a63-41ef-92a1-686901ca991e] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/query.do
+2026-01-18 21:26:17 [http-nio-8080-exec-5] [ab0500a9-6a63-41ef-92a1-686901ca991e] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/query.do status=200 latency=0ms
+2026-01-18 21:26:17 [http-nio-8080-exec-4] [aada8c4a-28fb-479d-8dbc-0d40b80b84a9] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:26:17 [http-nio-8080-exec-9] [380ae0f9-2cc6-4da9-b462-97b73b058dbe] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/table.js
+2026-01-18 21:26:17 [http-nio-8080-exec-9] [380ae0f9-2cc6-4da9-b462-97b73b058dbe] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/table.js status=304 latency=0ms
+2026-01-18 21:26:17 [http-nio-8080-exec-4] [aada8c4a-28fb-479d-8dbc-0d40b80b84a9] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=0ms
+2026-01-18 21:26:24 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-18 21:26:24 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-18 21:26:24 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-18 21:26:24 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-18 21:26:24 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-01-18 21:35:43 [background-preinit] [] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-01-18 21:35:43 [main] [] INFO  com.libraryweb.LibraryApplication - Starting LibraryApplication using Java 21.0.9 with PID 8556 (C:\Users\adity\Downloads\library-parent\library-web\target\classes started by adity in C:\Users\adity\Downloads\library-parent)
+2026-01-18 21:35:43 [main] [] INFO  com.libraryweb.LibraryApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-18 21:35:43 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-18 21:35:43 [main] [] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2026-01-18 21:35:44 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-01-18 21:35:44 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-18 21:35:44 [main] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-18 21:35:44 [main] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-01-18 21:35:44 [main] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-18 21:35:44 [main] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1501 ms
+2026-01-18 21:35:44 [main] [] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-18 21:35:44 [main] [] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2026-01-18 21:35:44 [main] [] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-01-18 21:35:45 [main] [] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-18 21:35:45 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-18 21:35:45 [main] [] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:librarydb user=SA
+2026-01-18 21:35:45 [main] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-18 21:35:45 [main] [] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-18 21:35:45 [main] [] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-18 21:35:45 [main] [] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-18 21:35:45 [main] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-18 21:35:46 [main] [] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-18 21:35:47 [main] [] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-18 21:35:47 [main] [] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name securityUserDetailsService
+2026-01-18 21:35:47 [main] [] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:librarydb'
+2026-01-18 21:35:47 [main] [] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-18 21:35:47 [main] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-01-18 21:35:47 [main] [] INFO  com.libraryweb.LibraryApplication - Started LibraryApplication in 4.877 seconds (process running for 5.124)
+2026-01-18 21:36:00 [http-nio-8080-exec-1] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-18 21:36:00 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-18 21:36:00 [http-nio-8080-exec-1] [] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-01-18 21:36:00 [http-nio-8080-exec-1] [d2573a2e-8654-470e-b8e6-4d305b8f07bf] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/index.html
+2026-01-18 21:36:00 [http-nio-8080-exec-1] [d2573a2e-8654-470e-b8e6-4d305b8f07bf] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/index.html status=200 latency=56ms
+2026-01-18 21:36:00 [http-nio-8080-exec-10] [76a4e68e-0710-4685-a39c-428385633409] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/index.css
+2026-01-18 21:36:00 [http-nio-8080-exec-2] [4eba85cc-551e-4271-aca8-127b8cb6b6a3] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui.css
+2026-01-18 21:36:00 [http-nio-8080-exec-5] [eb2efac5-0269-4120-8eca-c13ac34556d5] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui-bundle.js
+2026-01-18 21:36:00 [http-nio-8080-exec-7] [9c477790-2c84-4b9e-b8dd-bb830c71c35e] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-initializer.js
+2026-01-18 21:36:00 [http-nio-8080-exec-6] [6ad27bbb-1c61-4631-a3e5-2cff11596009] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-01-18 21:36:00 [http-nio-8080-exec-10] [76a4e68e-0710-4685-a39c-428385633409] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/index.css status=200 latency=1ms
+2026-01-18 21:36:00 [http-nio-8080-exec-2] [4eba85cc-551e-4271-aca8-127b8cb6b6a3] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui.css status=200 latency=1ms
+2026-01-18 21:36:00 [http-nio-8080-exec-6] [6ad27bbb-1c61-4631-a3e5-2cff11596009] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui-standalone-preset.js status=200 latency=0ms
+2026-01-18 21:36:00 [http-nio-8080-exec-5] [eb2efac5-0269-4120-8eca-c13ac34556d5] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-ui-bundle.js status=200 latency=23ms
+2026-01-18 21:36:00 [http-nio-8080-exec-7] [9c477790-2c84-4b9e-b8dd-bb830c71c35e] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/swagger-initializer.js status=200 latency=44ms
+2026-01-18 21:36:00 [http-nio-8080-exec-8] [4c47c066-c827-42e1-a377-4ce07753b810] INFO  c.l.filter.CorrelationFilter - Request Started: GET /swagger-ui/favicon-32x32.png
+2026-01-18 21:36:00 [http-nio-8080-exec-4] [34bed06f-78b8-47f1-96df-80aecdbbf98c] INFO  c.l.filter.CorrelationFilter - Request Started: GET /v3/api-docs/swagger-config
+2026-01-18 21:36:00 [http-nio-8080-exec-8] [4c47c066-c827-42e1-a377-4ce07753b810] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/swagger-ui/favicon-32x32.png status=200 latency=4ms
+2026-01-18 21:36:00 [http-nio-8080-exec-4] [34bed06f-78b8-47f1-96df-80aecdbbf98c] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/v3/api-docs/swagger-config status=200 latency=58ms
+2026-01-18 21:36:00 [http-nio-8080-exec-9] [a29dba37-c37d-4175-b3e6-a09aede3df9b] INFO  c.l.filter.CorrelationFilter - Request Started: GET /v3/api-docs
+2026-01-18 21:36:01 [http-nio-8080-exec-9] [a29dba37-c37d-4175-b3e6-a09aede3df9b] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 802 ms
+2026-01-18 21:36:01 [http-nio-8080-exec-9] [a29dba37-c37d-4175-b3e6-a09aede3df9b] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/v3/api-docs status=200 latency=857ms
+2026-01-18 21:36:28 [http-nio-8080-exec-3] [d3e58565-1a1c-4bae-bb23-27cbe09cd935] INFO  c.l.filter.CorrelationFilter - Request Started: POST /books
+2026-01-18 21:36:28 [http-nio-8080-exec-3] [d3e58565-1a1c-4bae-bb23-27cbe09cd935] INFO  com.libraryservice.BookService - Creating book: Marvel
+2026-01-18 21:36:28 [http-nio-8080-exec-3] [d3e58565-1a1c-4bae-bb23-27cbe09cd935] INFO  c.libraryservice.aop.LoggingAspect - BookResponse com.libraryservice.BookService.create(CreateBookRequest) executed in 8 ms
+2026-01-18 21:36:28 [http-nio-8080-exec-3] [d3e58565-1a1c-4bae-bb23-27cbe09cd935] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/books status=201 latency=72ms
+2026-01-18 21:36:33 [http-nio-8080-exec-1] [ffa27d82-d4c4-4e7f-97f3-f3fdeb0e625d] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/query.do
+2026-01-18 21:36:33 [http-nio-8080-exec-1] [ffa27d82-d4c4-4e7f-97f3-f3fdeb0e625d] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/query.do status=200 latency=18ms
+2026-01-18 21:36:33 [http-nio-8080-exec-10] [1fd8d40e-03c6-4595-8116-9339a703b3b6] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:36:33 [http-nio-8080-exec-10] [1fd8d40e-03c6-4595-8116-9339a703b3b6] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=200 latency=31ms
+2026-01-18 21:36:33 [http-nio-8080-exec-2] [48143500-0fcf-4c7b-af77-a6d527565192] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/login.jsp
+2026-01-18 21:36:33 [http-nio-8080-exec-2] [48143500-0fcf-4c7b-af77-a6d527565192] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/login.jsp status=200 latency=7ms
+2026-01-18 21:36:33 [http-nio-8080-exec-6] [3fac0798-803a-49f6-b36f-6950971c1359] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/login.jsp
+2026-01-18 21:36:33 [http-nio-8080-exec-6] [3fac0798-803a-49f6-b36f-6950971c1359] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/login.jsp status=200 latency=0ms
+2026-01-18 21:36:33 [http-nio-8080-exec-5] [0ffd2ae5-58ca-4a0e-a97f-ad95bd96cc86] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/background.gif
+2026-01-18 21:36:33 [http-nio-8080-exec-5] [0ffd2ae5-58ca-4a0e-a97f-ad95bd96cc86] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/background.gif status=200 latency=8ms
+2026-01-18 21:36:33 [http-nio-8080-exec-7] [65d7cf2a-8f89-4fa1-b3f5-401806ed30ab] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/login.jsp
+2026-01-18 21:36:33 [http-nio-8080-exec-7] [65d7cf2a-8f89-4fa1-b3f5-401806ed30ab] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/login.jsp status=200 latency=1ms
+2026-01-18 21:36:33 [http-nio-8080-exec-8] [01408eed-1922-4b59-9af7-eb73750d2939] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/background.gif
+2026-01-18 21:36:33 [http-nio-8080-exec-8] [01408eed-1922-4b59-9af7-eb73750d2939] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/background.gif status=200 latency=0ms
+2026-01-18 21:36:35 [http-nio-8080-exec-4] [9be64363-ad28-4a02-a89d-46369fd69094] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/test.do
+2026-01-18 21:36:35 [http-nio-8080-exec-4] [9be64363-ad28-4a02-a89d-46369fd69094] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/test.do status=200 latency=10ms
+2026-01-18 21:36:36 [http-nio-8080-exec-9] [c3153f70-de93-4194-9799-9797b0ec1c5e] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/login.do
+2026-01-18 21:36:36 [http-nio-8080-exec-9] [c3153f70-de93-4194-9799-9797b0ec1c5e] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/login.do status=200 latency=1ms
+2026-01-18 21:36:36 [http-nio-8080-exec-1] [60303663-d74e-4215-ae74-3af862f1eedb] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tables.do
+2026-01-18 21:36:36 [http-nio-8080-exec-10] [c658065f-1e1d-452e-8059-f293d3bf8eb3] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/query.jsp
+2026-01-18 21:36:36 [http-nio-8080-exec-2] [ab90cc13-d885-4a6d-bc2a-fdd1fb794656] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/help.jsp
+2026-01-18 21:36:36 [http-nio-8080-exec-3] [a04cb251-9b1e-49e0-bb99-e17df14040fd] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/header.jsp
+2026-01-18 21:36:36 [http-nio-8080-exec-10] [c658065f-1e1d-452e-8059-f293d3bf8eb3] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/query.jsp status=200 latency=2ms
+2026-01-18 21:36:36 [http-nio-8080-exec-2] [ab90cc13-d885-4a6d-bc2a-fdd1fb794656] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/help.jsp status=200 latency=1ms
+2026-01-18 21:36:36 [http-nio-8080-exec-3] [a04cb251-9b1e-49e0-bb99-e17df14040fd] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/header.jsp status=200 latency=1ms
+2026-01-18 21:36:36 [http-nio-8080-exec-1] [60303663-d74e-4215-ae74-3af862f1eedb] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tables.do status=200 latency=59ms
+2026-01-18 21:36:36 [http-nio-8080-exec-6] [2b2617fb-5626-4504-86d3-d556f7fa8baf] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_disconnect.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-7] [c361140b-8bc2-40e9-bd7b-d964422a8cf8] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_help.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-8] [0949ba39-85e2-4d61-8bba-e4bac2bfd1ca] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_history.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-7] [c361140b-8bc2-40e9-bd7b-d964422a8cf8] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_help.gif status=200 latency=3ms
+2026-01-18 21:36:36 [http-nio-8080-exec-6] [2b2617fb-5626-4504-86d3-d556f7fa8baf] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_disconnect.gif status=200 latency=3ms
+2026-01-18 21:36:36 [http-nio-8080-exec-5] [cfa027ec-bda0-48f3-949d-5a79618ad786] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_line.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-8] [0949ba39-85e2-4d61-8bba-e4bac2bfd1ca] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_history.gif status=200 latency=3ms
+2026-01-18 21:36:36 [http-nio-8080-exec-5] [cfa027ec-bda0-48f3-949d-5a79618ad786] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_line.gif status=200 latency=1ms
+2026-01-18 21:36:36 [http-nio-8080-exec-4] [ccfff9bc-cbd3-4a8e-a5d4-f420fbced4bd] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_refresh.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-4] [ccfff9bc-cbd3-4a8e-a5d4-f420fbced4bd] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_refresh.gif status=200 latency=2ms
+2026-01-18 21:36:36 [http-nio-8080-exec-9] [80bd1198-692c-46a2-bc2f-c68ff8a5244a] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_rollback.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-9] [80bd1198-692c-46a2-bc2f-c68ff8a5244a] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_rollback.gif status=200 latency=1ms
+2026-01-18 21:36:36 [http-nio-8080-exec-10] [07c5bc46-2533-4d0c-a3da-b3f2d93999cb] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_commit.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-2] [1f3c4fe5-572c-47ce-bec4-42b7a3ab6d30] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree.js
+2026-01-18 21:36:36 [http-nio-8080-exec-3] [d29419b4-2c46-4056-b8ff-58e5d7cb90a2] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_run.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-7] [f0095c99-b179-428d-8938-1abf3283b113] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_stop.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-10] [07c5bc46-2533-4d0c-a3da-b3f2d93999cb] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_commit.gif status=200 latency=2ms
+2026-01-18 21:36:36 [http-nio-8080-exec-1] [2f6ab4f8-b2b4-4b5e-b64a-6e730f68be06] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/icon_run_selected.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-2] [1f3c4fe5-572c-47ce-bec4-42b7a3ab6d30] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree.js status=200 latency=2ms
+2026-01-18 21:36:36 [http-nio-8080-exec-1] [2f6ab4f8-b2b4-4b5e-b64a-6e730f68be06] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_run_selected.gif status=200 latency=1ms
+2026-01-18 21:36:36 [http-nio-8080-exec-7] [f0095c99-b179-428d-8938-1abf3283b113] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_stop.gif status=200 latency=2ms
+2026-01-18 21:36:36 [http-nio-8080-exec-3] [d29419b4-2c46-4056-b8ff-58e5d7cb90a2] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/icon_run.gif status=200 latency=2ms
+2026-01-18 21:36:36 [http-nio-8080-exec-5] [273a7ab5-c350-4b38-86e7-d1d7a976011c] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_database.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-10] [fbe693ec-17c2-4199-98a8-35a453a1b1e0] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_column.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-9] [547bb662-2585-423d-9abd-c9e81d7699d5] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_empty.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-6] [564674f6-d75e-4d52-aaa0-75f96ff78614] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_plus.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-4] [0adf5032-c729-4627-89f6-99d8323645b6] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_table.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-8] [a588a6ad-180c-4421-964a-8ab791b1b58a] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_minus.gif
+2026-01-18 21:36:36 [http-nio-8080-exec-4] [0adf5032-c729-4627-89f6-99d8323645b6] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_table.gif status=200 latency=2ms
+2026-01-18 21:36:36 [http-nio-8080-exec-10] [fbe693ec-17c2-4199-98a8-35a453a1b1e0] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_column.gif status=200 latency=1ms
+2026-01-18 21:36:36 [http-nio-8080-exec-5] [273a7ab5-c350-4b38-86e7-d1d7a976011c] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_database.gif status=200 latency=2ms
+2026-01-18 21:36:36 [http-nio-8080-exec-9] [547bb662-2585-423d-9abd-c9e81d7699d5] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_empty.gif status=200 latency=3ms
+2026-01-18 21:36:36 [http-nio-8080-exec-6] [564674f6-d75e-4d52-aaa0-75f96ff78614] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_plus.gif status=200 latency=2ms
+2026-01-18 21:36:36 [http-nio-8080-exec-8] [a588a6ad-180c-4421-964a-8ab791b1b58a] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_minus.gif status=200 latency=1ms
+2026-01-18 21:36:37 [http-nio-8080-exec-2] [04b1206b-b240-4943-b5df-1b290b1684ed] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_folder.gif
+2026-01-18 21:36:37 [http-nio-8080-exec-1] [a7fc4da0-d4e2-4daf-80f8-c722aea02040] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_users.gif
+2026-01-18 21:36:37 [http-nio-8080-exec-2] [04b1206b-b240-4943-b5df-1b290b1684ed] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_folder.gif status=200 latency=0ms
+2026-01-18 21:36:37 [http-nio-8080-exec-7] [47d946be-4aa5-4baa-ab37-bf74ddc65574] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_index_az.gif
+2026-01-18 21:36:37 [http-nio-8080-exec-1] [a7fc4da0-d4e2-4daf-80f8-c722aea02040] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_users.gif status=200 latency=0ms
+2026-01-18 21:36:37 [http-nio-8080-exec-7] [47d946be-4aa5-4baa-ab37-bf74ddc65574] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_index_az.gif status=200 latency=16ms
+2026-01-18 21:36:37 [http-nio-8080-exec-10] [a966fe06-3273-4213-a7c6-d223366eb5ee] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_index.gif
+2026-01-18 21:36:37 [http-nio-8080-exec-4] [8fd91cf2-f570-4600-a081-1821217fa474] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_view.gif
+2026-01-18 21:36:37 [http-nio-8080-exec-3] [b974777e-2a6e-4163-8a5a-661d6b2d3eb9] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_type.gif
+2026-01-18 21:36:37 [http-nio-8080-exec-10] [a966fe06-3273-4213-a7c6-d223366eb5ee] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_index.gif status=200 latency=0ms
+2026-01-18 21:36:37 [http-nio-8080-exec-4] [8fd91cf2-f570-4600-a081-1821217fa474] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_view.gif status=200 latency=0ms
+2026-01-18 21:36:37 [http-nio-8080-exec-3] [b974777e-2a6e-4163-8a5a-661d6b2d3eb9] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_type.gif status=200 latency=0ms
+2026-01-18 21:36:37 [http-nio-8080-exec-5] [551c71cb-c4ce-4168-a739-ef6a9ee685c1] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_user.gif
+2026-01-18 21:36:37 [http-nio-8080-exec-9] [4d3ccec9-ff92-4d93-8d1a-ea20321f5ab1] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/tree_info.gif
+2026-01-18 21:36:37 [http-nio-8080-exec-5] [551c71cb-c4ce-4168-a739-ef6a9ee685c1] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_user.gif status=200 latency=0ms
+2026-01-18 21:36:37 [http-nio-8080-exec-9] [4d3ccec9-ff92-4d93-8d1a-ea20321f5ab1] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/tree_info.gif status=200 latency=0ms
+2026-01-18 21:36:51 [http-nio-8080-exec-6] [e26d5207-1fe1-47bf-8b5d-b092f7622312] INFO  c.l.filter.CorrelationFilter - Request Started: POST /h2-console/query.do
+2026-01-18 21:36:51 [http-nio-8080-exec-6] [e26d5207-1fe1-47bf-8b5d-b092f7622312] INFO  c.l.filter.CorrelationFilter - Request Ended: method=POST path=/h2-console/query.do status=200 latency=0ms
+2026-01-18 21:36:52 [http-nio-8080-exec-8] [c46abb05-1d69-4e10-9bfe-336bfb1090f7] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/stylesheet.css
+2026-01-18 21:36:52 [http-nio-8080-exec-1] [e1eca114-eb74-470c-bccd-002572dfde5e] INFO  c.l.filter.CorrelationFilter - Request Started: GET /h2-console/table.js
+2026-01-18 21:36:52 [http-nio-8080-exec-8] [c46abb05-1d69-4e10-9bfe-336bfb1090f7] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/stylesheet.css status=304 latency=0ms
+2026-01-18 21:36:52 [http-nio-8080-exec-1] [e1eca114-eb74-470c-bccd-002572dfde5e] INFO  c.l.filter.CorrelationFilter - Request Ended: method=GET path=/h2-console/table.js status=200 latency=0ms
+2026-01-18 21:36:59 [SpringApplicationShutdownHook] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-18 21:36:59 [tomcat-shutdown] [] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-01-18 21:36:59 [SpringApplicationShutdownHook] [] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-01-18 21:36:59 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-01-18 21:36:59 [SpringApplicationShutdownHook] [] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
