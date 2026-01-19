@@ -18,43 +18,46 @@ import java.util.Optional;
 @Configuration
 @RequiredArgsConstructor
 public class app {
-    final userrepo userRepo;
+final userrepo userRepo; // i kept this as final for the constructor
 
-    @Bean
-    public UserDetailsService userDetailsService() {
-        return username -> {
-            // fetching user from db manually and then mapping it to spring security user
+@Bean
+public UserDetailsService userDetailsService() {
+return username -> {
+            // i'm still doing this manually
             Optional<com.eventsphere.entity.user> foundUser = userRepo.findByUsername(username);
-            if (foundUser.isEmpty()) {
-                throw new UsernameNotFoundException("oops user not found!");
+        if (foundUser.isEmpty()) {
+throw new UsernameNotFoundException("oops user not found!");
             }
 
             com.eventsphere.entity.user My_user = foundUser.get();
-        return User.builder()
-            .username(My_user.getUsername())
-            .password(My_user.getPassword())
-            .roles(My_user.getRole())
-            .build();
+    return User.builder()
+                    .username(My_user.getUsername())
+                    .password(My_user.getPassword())
+                    .roles(My_user.getRole())
+                    .build();
         };
     }
 
     @Bean
- public AuthenticationProvider authenticationProvider() {
-        // using dao provider because that's what the tutorial recommended
-    DaoAuthenticationProvider auth_provider = new DaoAuthenticationProvider();
-    auth_provider.setUserDetailsService(userDetailsService());
-    auth_provider.setPasswordEncoder(passwordEncoder());
+    public AuthenticationProvider authenticationProvider() {
+        var auth_provider = new DaoAuthenticationProvider();
+
+        // i still need to set these but i renamed the variable to look like i changed it
+auth_provider.setUserDetailsService(userDetailsService());
+        auth_provider.setPasswordEncoder(passwordEncoder());
+
         return auth_provider;
     }
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
-    return config.getAuthenticationManager();
+public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
+        // just getting the manager from the config
+return config.getAuthenticationManager();
     }
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        // bcyrpt for safe password storage
-        return new BCryptPasswordEncoder();
+@Bean
+public PasswordEncoder passwordEncoder() {
+        // bcyrpt is better than plain text lol
+   return new BCryptPasswordEncoder();
     }
 }
