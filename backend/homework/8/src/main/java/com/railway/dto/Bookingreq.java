@@ -14,8 +14,6 @@ public class Bookingreq implements Serializable {
 
     private double amount;
 
-    public Bookingreq() {}
-
     public String getBookingId() { return bookingId; }
     // setter is used by the controller if the ID is missing
     public void setBookingId(String bookingId) { this.bookingId = bookingId; }
@@ -28,4 +26,5 @@ public class Bookingreq implements Serializable {
 
     public double getAmount() { return amount; }
     public void setAmount(double amount) { this.amount = amount; }
+
 }
