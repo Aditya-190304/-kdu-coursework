@@ -14,8 +14,6 @@ public class Paymenthistory {
     @Id
     private String bookingId;
 
-    private LocalDateTime paidAt;
-
     public Paymenthistory() {}
 
     public Paymenthistory(String bookingId) {
@@ -23,4 +21,5 @@ public class Paymenthistory {
         //  recording the current time when the payment object is created
         this.paidAt = LocalDateTime.now();
     }
+
 }
