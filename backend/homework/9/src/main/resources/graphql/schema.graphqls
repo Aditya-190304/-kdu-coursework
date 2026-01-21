@@ -1,0 +1,31 @@
+#i defined the movie shape here, making sure to link the director and reviews so we can fetch them together
+type Movie {
+    id: ID!
+    title: String
+    genre: String
+    director: Director
+    reviews: [Review]
+}
+
+# i made a separate type for director details
+type Director {
+    id: ID!
+    name: String
+    totalAwards: Int
+}
+
+# simple type to hold the user feedback data
+type Review {
+    comment: String
+    rating: Int
+}
+
+#i set up this query entry point so the client can look up a specific movie by its id
+type Query {
+    findMovieById(id: ID): Movie
+}
+
+# i added this mutation to let users submit reviews and i'm returning the movie so the ui updates instantly
+type Mutation {
+    addReview(movieId: ID, comment: String, rating: Int): Movie
+}
