@@ -1,0 +1,7 @@
+@use "variables" as *;
+
+@mixin container($max: $container-max, $px: 1.5rem) {
+  max-width: $max;
+  margin: 0 auto;
+  padding: 0 $px;
+}

@@ -1,0 +1,64 @@
+@use "../abstracts/variables" as *;
+
+.feature-item {
+  background: $color-white;
+  padding: 1.5rem;
+  border: 2px solid $color-border;
+  border-radius: $radius-xl;
+}
+
+.feature-item img {
+  width: 100%;
+  height: 180px;
+  border-radius: $radius-lg;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.feature-item {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: $color-text;
+  margin-bottom: 0.75rem;
+}
+
+.course-card {
+  background: $color-white;
+  border: 2px solid $color-border;
+  border-radius: $radius-xl;
+  padding: 1.5rem;
+  width: 100%;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color-text;
+    margin-bottom: 0.75rem;
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    border-radius: $radius-lg;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $color-muted;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 1.25rem;
+
+    li {
+      position: relative;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: $color-muted;
+    }
+  }
+}
