@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techlearn Academy</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
+          <div class="brand">TechLearn <span>Academy</span></div>
             <ul>
                <li><a href="#contact">Contact</a></li>
                <li><a href="#courses">Courses</a></li>
@@ -86,7 +87,6 @@
                      <a href="#contact" class="enroll-link">Enroll Now</a>
                      </div>
                      </div>
-                    <br>
                 <div class="course-card">
                     <h3>JavaScript Essentials Course</h3>
                     <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=500&h=300&fit=crop" alt="Course 2">
@@ -103,7 +103,6 @@
                         <a href="#contact" class="enroll-link">Enroll Now</a>
                 </div>
                 </div>
-                <br>
                 <div class="course-card">
                     <h3>React Development Course</h3>
                     <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&h=300&fit=crop" alt="Course 3">
@@ -151,17 +150,17 @@
   <form class="contact-form">
     <div class="field">
       <label for="name">Full Name <span class="req">*</span></label>
-      <input type="text" id="name" name="name" required placeholder="John Doe" minlength="2" maxlength="50">
+      <input type="text" id="name" name="name" required  minlength="2" maxlength="50">
     </div>
 
     <div class="field">
       <label for="email">Email Address <span class="req">*</span></label>
-      <input type="email" id="email" name="email" required placeholder="john@example.com">
+      <input type="email" id="email" name="email" required>
     </div>
 
     <div class="field">
       <label for="phoneNumber">Phone Number</label>
-      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="1234567890" pattern="[0-9]{10}">
+      <input type="tel" id="phoneNumber" name="phoneNumber"  pattern="[0-9]{10}">
     </div>
 
     <div class="field">
@@ -215,6 +214,9 @@
     <button type="submit" class="btn-submit">Send Message</button>
   </form>
 </section>
-</body>
+<footer class="site-footer">
+  <p>© 2024 TechLearn Academy. All rights reserved.</p>
+  <p>Made with <span class="heart">❤</span> for learners</p>
+</footer>
 </body>
 </html>
