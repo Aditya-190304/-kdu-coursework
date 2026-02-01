@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as v;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+background: v.$color-bg;
+  color: v.$color-text;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+text-decoration: none;
+}
+
+button {
+  border: 0;
+background: transparent;
+  color: inherit;
+font: inherit;
+  cursor: pointer;
+}
+
+textarea,
+input {
+  font: inherit;
+  color: inherit;
+}

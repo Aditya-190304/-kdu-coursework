@@ -1,0 +1,85 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.tweet-box {
+  @include m.flex(flex-start, flex-start, v.$space-3);
+  padding: v.$space-4;
+  border-bottom: 1px solid v.$color-border;
+}
+
+.post-input {
+  flex: 1;
+}
+
+textarea {
+  width: 100%;
+  min-height: 60px;
+resize: none;
+border: 0;
+  outline: 0;
+background: transparent;
+  font-size: 18px;
+}
+
+.tweet-box-bottom {
+  margin-top: v.$space-3;
+  @include m.flex(center, space-between, v.$space-3);
+}
+
+.tweet-icons {
+  @include m.flex(center, flex-start, v.$space-3);
+
+  img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.9;
+  }
+}
+.mobile-tweet-box {
+  display: none;
+  padding: v.$space-4;
+  border-bottom: 1px solid v.$color-border;
+}
+.mobile-tweet-top {
+  @include m.flex(center, space-between, v.$space-3);
+  margin-bottom: v.$space-4;
+
+
+
+  .mobile-back img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .mobile-drafts {
+    color: v.$color-blue;
+    font-weight: 600;
+  }
+}
+
+.mobile-tweet-body {
+  @include m.flex(flex-start, flex-start, v.$space-3);
+}
+
+.mobile-reply {
+  @include m.flex(center, flex-start, v.$space-2);
+  color: v.$color-blue;
+font-weight: 600;
+  margin-top: v.$space-3;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.floating-tweet-box-icon {
+  display: none;
+position: fixed;
+  right: 18px;
+  bottom: 22px;
+width: 56px;
+  height: 56px;
+border-radius: v.$radius-pill;
+  background: v.$color-blue;
+}

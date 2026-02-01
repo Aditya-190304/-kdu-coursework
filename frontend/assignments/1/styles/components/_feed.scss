@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as v;
+
+.posts {
+  display: flex;
+  flex-direction: column;
+gap: v.$space-4;
+  padding: v.$space-4 0;
+}

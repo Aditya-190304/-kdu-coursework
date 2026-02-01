@@ -1,0 +1,65 @@
+@use "abstracts/variables";
+@use "abstracts/mixins";
+
+@use "base/reset";
+@use "base/typography";
+
+@use "layout/grid";
+@use "layout/navigation";
+@use "layout/sidebar";
+
+@use "components/buttons";
+@use "components/tweet-box";
+@use "components/feed";
+@use "components/post";
+@use "abstracts/variables" as v;
+@use "abstracts/mixins" as m;
+
+.mobile-drawer {
+  display: none;
+
+  @include m.mobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: min(82vw, 320px);
+    background: v.$color-bg;
+    border-right: 1px solid v.$color-border;
+    z-index: 1000;
+
+    transform: translateX(-105%);
+    transition: transform 0.25s ease;
+    overflow-y: auto;
+  }
+}
+
+.mobile-drawer.is-open {
+  @include m.mobile {
+    transform: translateX(0);
+  }
+}
+
+.drawer-overlay {
+  display: none;
+
+  @include m.mobile {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 999;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+}
+
+.drawer-overlay.is-open {
+  @include m.mobile {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
