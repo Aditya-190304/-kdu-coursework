@@ -1,0 +1,67 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.app-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: v.$nav-width 1fr;
+}
+
+.main-content {
+  width: 100%;
+  max-width: v.$content-max;
+  padding: v.$space-4;
+}
+
+/* Desktop */
+@include m.desktop {
+  .navigation-section {
+    display: block;
+  }
+
+  .mobile-drawer {
+    display: none;
+  }
+
+  #tweetBox {
+    display: flex;
+  }
+
+  #mobileTweetBox,
+  .floating-tweet-box-icon {
+    display: none;
+  }
+}
+
+/* Mobile */
+@include m.mobile {
+  .app-container {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation-section {
+    display: none;
+  }
+
+  /* IMPORTANT: keep drawer available (for animation), but not blocking content */
+  .mobile-drawer {
+    display: block;
+  }
+
+  #tweetBox {
+    display: none;
+  }
+
+  #mobileTweetBox {
+    display: block;
+  }
+
+  .floating-tweet-box-icon {
+    display: block;
+  }
+
+  .main-content {
+    max-width: 100%;
+    padding: v.$space-3;
+  }
+}
