@@ -1,0 +1,5 @@
+1->Frank Miller->Engineering->120000
+2->Henry Davis->Sales->95000
+3->Charlie Brown->Engineering->91000
+4->Alice Johnson->Engineering->85000
+5->David Lee->HR->75000

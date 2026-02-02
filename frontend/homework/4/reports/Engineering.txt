@@ -1,0 +1,9 @@
+depatment: Engineering
+employee count: 3
+
+Alice Johnson-85000
+Charlie Brown-91000
+Frank Miller-120000
+
+total salary: 296000
+average salary: 98666.66666666667
