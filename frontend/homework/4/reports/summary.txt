@@ -1,0 +1,25 @@
+total employees: 8
+total salary: 651000
+average salary: 81375
+
+department wise breakdown:
+
+department: Engineering
+count: 3
+total salary: 296000
+average salary: 98666.66666666667
+
+department: HR
+count: 2
+total salary: 137000
+average salary: 68500
+
+department: Sales
+count: 2
+total salary: 150000
+average salary: 75000
+
+department: Marketing
+count: 1
+total salary: 68000
+average salary: 68000
