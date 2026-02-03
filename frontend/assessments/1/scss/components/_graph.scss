@@ -1,0 +1,42 @@
+.graph{
+    position: relative;
+    width: 100%;
+}
+.graph-container{
+    height: 500px;
+    border: 1px solid $black-border;
+    background-color: $white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+
+    background-image:
+        linear-gradient(to right, $grid-color 1px, transparent 1px),
+        linear-gradient(to bottom, $grid-color 1px, transparent 1px);
+    background-size: 100px 125px;
+    background-position: -1px -1px;
+}
+
+.bar{
+    width: 20px;
+    border: 1px solid $black-border;
+    &.up{
+        background-color: $green-light-up-bg;
+    }
+    &.down{
+        background-color:$red-light-down-bg;
+    }
+}
+
+.x-axis{
+    display: flex;
+    margin-top: 5px;
+    span{
+        width: 100px;
+        font-size: 0.8rem;
+        color: #333;
+        padding-left: 2px;
+        border-left: 1px solid transparent;
+    }
+}
