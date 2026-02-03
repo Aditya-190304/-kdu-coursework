@@ -1,0 +1,70 @@
+.control_pannel{
+    @include push-apart;
+    padding-bottom: 5px;
+    @include mobile-view{
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    }
+}
+
+.stock_info{
+    display: flex;
+    gap: $spacing;
+}
+
+.logo-container{
+    @include center-content;
+    border: 1px solid $black-border;
+    padding: 5px 15px;
+    background: $yellow-light-accent;
+
+    .stock-logo{
+        width: 35px;
+        height: 35px;
+        margin-right:12px;
+    }
+    .name{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+}
+.price{
+position: relative; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid $black-border;
+    padding: 5px 15px;
+    padding-bottom: 15px; 
+    background: $white;
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: #333;
+
+    .price-value{
+        font-weight: 700;
+        font-size: 1.8rem;
+        text-align: right;
+    }
+    .price-arrow{
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: -5px;
+        
+    }
+    .percentage{
+        position: absolute;
+        bottom: 2px;
+        right: 5px;
+        font-size: 0.6rem;
+        font-weight: 600;
+        color: #666;
+        
+        
+        
+    }
+}
