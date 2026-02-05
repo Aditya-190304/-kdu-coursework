@@ -1,0 +1,13 @@
+.listContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.emptyState {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.2rem;
+  padding: 16px;
+}/*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,28 @@
+@use '../../styles/variables' as *;
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.2s;
+  border-left: 5px solid transparent;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+}
+
+.statusAvailable {
+  color: $status-available;
+  font-weight: bold;
+}
+
+.statusUnavailable {
+  color: $status-unavailable;
+  font-weight: bold;
+}
