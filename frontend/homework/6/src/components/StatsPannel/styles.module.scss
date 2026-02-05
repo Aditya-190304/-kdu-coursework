@@ -1,0 +1,33 @@
+@use '../../styles/variables' as *;
+
+.statsContainer {
+  display: flex;
+   justify-content: center; 
+  align-items: center;     
+ gap: 40px;               
+  
+  margin: $spacing-md auto; 
+   padding: $spacing-md;
+
+}
+
+.statItem {
+  display: flex;
+flex-direction: column;
+  align-items: center;
+   text-align: center;
+
+  span:first-child {
+   font-size: 0.9rem;
+    color: $text-secondary;
+     text-transform: uppercase;
+    letter-spacing: 1px;
+   margin-bottom: 4px;
+  }
+
+  span:last-child {
+    font-size: 1.8rem;
+     font-weight: 800;
+    color: $primary-color;
+  }
+}

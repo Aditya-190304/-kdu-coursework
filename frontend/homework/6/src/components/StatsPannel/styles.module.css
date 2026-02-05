@@ -1,0 +1,27 @@
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 16px auto;
+  padding: 16px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.statItem span:first-child {
+  font-size: 0.9rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+.statItem span:last-child {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #3b82f6;
+}/*# sourceMappingURL=styles.module.css.map */
