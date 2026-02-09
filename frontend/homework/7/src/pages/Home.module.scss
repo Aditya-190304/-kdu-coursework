@@ -1,0 +1,22 @@
+@use "../styles/variables" as v;
+
+.container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: v.$text-dark;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: capitalize; 
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
