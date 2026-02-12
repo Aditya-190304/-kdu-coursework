@@ -1,0 +1,55 @@
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'mobile' {
+    @media (max-width: 480px) { @content; }
+  } @else if $breakpoint == 'tablet' {
+    @media (max-width: 768px) { @content; }
+  } @else if $breakpoint == 'desktop' {
+    @media (min-width: 1024px) { @content; }
+  }
+}
+
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@mixin auto-grid($min-size: 250px, $gap: 2rem) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($min-size, 1fr));
+  gap: $gap;
+}
+
+
+@mixin truncateText($lines: 1) {
+  @if $lines == 1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } @else {
+    overflow: hidden;
+  }
+}
+
+
+@mixin cardHover {
+  &:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@mixin reset-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
