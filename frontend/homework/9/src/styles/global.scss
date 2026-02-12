@@ -1,0 +1,16 @@
+@import './variables.scss';
+@import './reset.scss';
+
+body {
+  background-color: $background-light;
+  color: $text-dark;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.app-container.dark {
+  background-color: #1e272e;
+  color: #d2dae2;
+}
