@@ -1,0 +1,51 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.header {
+  width: 100%;
+  height: $header-height; 
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: $primary-color; 
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+
+.support {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .phoneNumber {
+    color: #000000; 
+    font-weight: 800;
+    font-size: 1.1rem;
+    cursor: default; 
+  }
+}
+
+@media (max-width: 480px) {
+  .phoneLabel {
+    display: none;
+  }
+}
