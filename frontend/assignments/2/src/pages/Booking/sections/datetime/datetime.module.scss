@@ -1,0 +1,71 @@
+@use "../../../../styles/variables" as *;
+@use "../../../../styles/mixins" as *; 
+@use "../../styles/shared" as *;
+
+
+
+.dateTime {
+  display: flex; gap: 20px;
+   margin-bottom: 20px;
+
+  @include mobile { 
+    flex-direction: column; 
+  }
+  
+  .dateBlock { 
+    flex: 1; 
+    label { 
+      display: block; 
+      margin-bottom: 10px; 
+      font-size: 0.9rem; 
+    }
+   }
+}
+
+.dateInput {
+  width: 100%; 
+  padding: 0 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  height: 45px;
+}
+
+.hoursControl {
+  display: flex;
+   border: 1px solid #ddd; 
+   border-radius: 4px; 
+   height: 45px; 
+   overflow: hidden;
+  button { 
+    width: 45px; 
+    border: none; 
+    background: #fff; 
+    font-size: 1.2rem;
+    }
+  span { 
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+     font-weight: bold;
+      border-left: 1px solid #eee; 
+      border-right: 1px solid #eee;
+     }
+}
+
+.timeGrid {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+  @include mobile { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .optionBtn {
+     padding: 12px; 
+     font-size: 0.8rem;
+      min-width: auto; 
+      &.active::after { 
+        content: none; 
+      }
+     }
+}

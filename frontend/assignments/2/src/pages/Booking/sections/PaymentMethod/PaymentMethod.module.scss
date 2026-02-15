@@ -1,0 +1,66 @@
+@use "../../../../styles/variables" as *;
+@use "../../../../styles/mixins" as *;
+@use "../../styles/shared" as *;
+
+.sslBadge {
+  border: 1px solid #8bc34a;
+  background-color: #f1f8e9;
+  border-radius: 5px;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+
+  strong { 
+    color: #558b2f; 
+    font-size: 0.85rem; 
+    display: block; 
+  }
+  
+  small { 
+    color: #7cb342; 
+    font-size: 0.75rem; 
+    text-transform: uppercase; 
+  }
+}
+
+.creditCardForm {
+  input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+    
+    &:focus { 
+      border-color: $primary-color; 
+      outline: none; 
+    }
+    
+    &::placeholder { 
+      color: #bbb; 
+    }
+  }
+
+  .cardInputWrapper {
+    position: relative;
+    .cardLogo { 
+      position: absolute; 
+      right: 15px; 
+      top: 18px; 
+      pointer-events: none; 
+    }
+  }
+
+  .row {
+    display: flex;
+    gap: 15px;
+    @include mobile { 
+      flex-direction: column; 
+      gap: 0; 
+    }
+  }
+}
