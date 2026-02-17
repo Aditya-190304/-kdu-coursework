@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.formwrapp { 
+  background: white;
+  padding: 25px;
+  width: 100%;
+  max-width: 450px;
+  @include border_radius_md; 
+  @include shadow_box;
+
+  @media (max-width: 600px) {
+    width: 95%; 
+    padding: 15px;
+    
+    .submitBtn {
+      font-size: 14px; 
+    }
+  }
+
+  .field {
+    margin-bottom: 1.2rem;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $border-color;
+      border-radius: 6px;
+      outline: none;
+
+      &:focus {
+        border-color: $primary-blue; 
+      }
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+  }
+
+  .submitBtn { 
+    width: 100%;
+    padding: 12px;
+    background-color: $success-green; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

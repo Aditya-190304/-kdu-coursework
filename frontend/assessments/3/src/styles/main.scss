@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+
+.btn_global {
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+  
+  &:hover {
+    opacity: 0.9;
+  }
+}

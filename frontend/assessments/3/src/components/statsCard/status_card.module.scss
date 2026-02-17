@@ -1,0 +1,57 @@
+@import '../../styles/variables';
+
+.card_container {
+  background: white;
+  padding: 2rem; 
+  border-radius: 12px; 
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  @media (max-width: 480px) {
+    padding: 1.2rem;
+    border-radius: 8px; 
+    
+    h3 {
+      font-size: 1rem;
+    }
+    
+    .status_area {
+      flex-direction: column; 
+      align-items: flex-start;
+    }
+  }
+
+  h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+
+  .status_area {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .tag {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+
+    
+    &.queued {
+      background-color: #fffbeb;
+      color: $pending-yellow; 
+    }
+
+    &.successful { 
+      background-color: #f0fdf4;
+      color: $success-green;
+    }
+
+    &.failed {
+      background-color: #fef2f2;
+      color: $error_red;
+    }
+  }
+}

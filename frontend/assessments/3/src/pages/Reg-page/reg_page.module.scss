@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.page_root { 
+  min-height: 100vh;
+  @include flexCenter;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header_blue { 
+  background-color: $primary-blue;
+  color: $white-color;
+  width: 100%;
+  max-width: 450px;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  @include border_radius_md;
+  margin-bottom: 2rem; 
+}
