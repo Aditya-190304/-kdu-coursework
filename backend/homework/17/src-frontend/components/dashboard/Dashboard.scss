@@ -1,0 +1,22 @@
+.dashboard-content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+
+  .tabs button {
+    padding: 0.8rem 1.5rem;
+    margin-right: 1rem;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+
+    &.active-tab {
+      background: #ff0000;
+      color: white;
+    }
+  }
+}
