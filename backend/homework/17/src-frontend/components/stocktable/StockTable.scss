@@ -1,0 +1,31 @@
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+
+  th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .action-btn {
+    background: #e0f0ff;
+    border: 1px solid #007bff;
+    color: #007bff;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.ticked {
+      background: #28a745;
+      color: white;
+      border-color: #28a745;
+    }
+  }
+}
