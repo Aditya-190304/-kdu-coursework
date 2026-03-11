@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Serverless Counter</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        #count { font-size: 40px; font-weight: bold; color: #0073bb; }
+    </style>
+</head>
+<body>
+    <h1>Visitor Counter</h1>
+    <div id="count">Loading...</div>
+    <br>
+    <button onclick="addCounter()">Add Counter</button>
+
+    <script>
+        const API_URL = "https://f2ovdxlnbd.execute-api.ap-southeast-1.amazonaws.com";
+
+        async function getCounter() {
+            try {
+                const res = await fetch(API_URL);
+                const data = await res.json();
+                document.getElementById('count').innerText = data.count;
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        async function addCounter() {
+            try {
+                const res = await fetch(API_URL, { method: 'PUT' });
+                const data = await res.json();
+                document.getElementById('count').innerText = data.count;
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        getCounter();
+    </script>
+</body>
+</html>
