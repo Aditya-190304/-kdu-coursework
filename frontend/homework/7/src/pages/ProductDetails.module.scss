@@ -1,0 +1,121 @@
+@use "../styles/variables" as v;
+
+.details {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .backbtn {
+    background: v.$primary-purple; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: v.$light-purple;
+    }
+  }
+}
+
+.layout {
+  display: flex;
+  gap: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: v.$radius; 
+  box-shadow: v.$shadow-sm; 
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.images {
+  flex: 1;
+
+  .mainImage {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #fdfdfd;
+  }
+
+  .gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+
+    img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: border-color 0.2s;
+
+      &:hover {
+        border-color: v.$primary-purple; 
+      }
+    }
+  }
+}
+
+.content {
+  flex: 1;
+
+  .brand {
+    color: v.$text-muted; 
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: v.$text-dark; 
+    margin: 0 0 15px 0;
+  }
+
+  .description {
+    line-height: 1.6;
+    color: #636e72;
+    margin-bottom: 20px;
+  }
+
+  .price {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: v.$success-green; 
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin: 8px 0;
+    color: v.$text-dark;
+    
+    strong {
+      color: v.$text-muted;
+    }
+  }
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 100px;
+  font-size: 1.2rem;
+  color: v.$text-dark;
+}
+
+.error {
+  color: #ff7675;
+}
