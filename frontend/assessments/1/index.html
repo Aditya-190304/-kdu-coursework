@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDU Stock Market Dashboard</title>
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="head_title">KDU Stock Market Dashboard</h1>
+    </header>
+    <div class="dashboard-container">
+        <main class="main_content">
+            <div class="control_pannel">
+                <div class="stock_info">
+                    <div class="logo-container">
+                        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/af1307136664867.Y3JvcCw1NzUzLDQ1MDAsNDIsMA.jpg " alt="zomato-logo" class="stock-logo">
+                        <span class="name">Zomato</span>
+                    </div>
+                    <div class="price">
+                        Price <span id="current_price" class="price-value"></span>
+                        <span id="arrow" class="price-arrow"></span>
+                        <span id="percent-change" class="percentage">--%</span>
+                    </div>
+                </div>
+                <div class="controls">
+                    <input type="number" id="qty" placeholder="Enter QTY" min="1">
+                    <button id="buy" class="btn-buy">BUY</button>
+                    <button id="sell" class="btn-sell">SELL</button>
+                </div>
+            </div>
+            <div class="graph">
+                <div class="graph-container" id="graph-container"></div>
+                <div class="x-axis">
+                    <span>0</span>
+                    <span>100</span>
+                    <span>200</span>
+                </div>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <h2 class="sidebar-title">History</h2>
+            <div class="history" id="history">
+                <div class="empty">NO Transactions</div>
+            </div>
+        </aside>
+    </div>
+    <script src="scripts/modules/utils.js"></script>
+    <script src="scripts/modules/ui.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
+</body>
+</html>

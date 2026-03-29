@@ -1,0 +1,17 @@
+@mixin center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin push-apart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin mobile-view{
+    @media(max-width:786px){
+        @content;
+    }
+}

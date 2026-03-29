@@ -1,0 +1,30 @@
+.controls{
+    display: flex;
+    gap: 10px;
+
+    input{
+        padding: 8px 10px;
+        border: 1px solid $black-border;
+        width: 120px;
+        font-family: inherit;
+        font-size: 0.9rem;
+    }
+}
+
+.btn-buy,.btn-sell{
+    padding: 8px 25px;
+    border: 1px solid $black-border;
+    font-weight: 500;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+.btn-buy{
+        background-color: $green-light-up-bg;
+        color: $green-up;
+        font-weight: 600;
+    }
+.btn-sell{
+        background-color: $red-light-down-bg;
+        color: $red-down;
+        font-weight: 600;
+    }

@@ -1,0 +1,23 @@
+.sidebar{
+    flex: 1;
+    border: 1px solid $black-border;
+    background: $white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+    .sidebar-title{
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+}
+
+.history{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 450px;
+    overflow: auto;
+    padding-right: 5px;
+}
