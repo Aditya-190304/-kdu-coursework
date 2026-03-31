@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as v;
+
+.user-name,
+.post-name {
+  font-weight: 700;
+}
+
+.user-handle,
+.post-handle,
+.post-time {
+  color: v.$color-muted;
+font-weight: 500;
+}
+
+.hashtag {
+  color: v.$color-blue;
+}

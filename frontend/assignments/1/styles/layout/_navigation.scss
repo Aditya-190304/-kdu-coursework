@@ -1,0 +1,56 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.navigation-section {
+  position: sticky;
+top: 0;
+  height: 100vh;
+padding: v.$space-4;
+  border-right: 1px solid v.$color-border;
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-4;
+}
+
+.nav-logo img {
+  width: 34px;
+  height: 34px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-1;
+}
+
+.nav-links a {
+  @include m.flex(center, flex-start, v.$space-3);
+padding: 12px 10px;
+  border-radius: v.$radius-pill;
+transition: background 0.15s ease;
+}
+
+.nav-links a img {
+  width: v.$icon-size;
+height: v.$icon-size;
+}
+
+.nav-links a:hover {
+background: rgba(255, 255, 255, 0.08);
+}
+
+.user-section {
+  margin-top: auto;
+  padding-top: v.$space-4;
+  @include m.flex(center, space-between, v.$space-3);
+}
+
+.user-badge {
+  @include m.flex(center, flex-start, v.$space-3);
+}
+
+.more-options-icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.8;
+}

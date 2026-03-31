@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X Homepage</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <div class="app-container">
+      <nav class="navigation-section">
+      <a href="#" class="nav-logo" aria-label="X">
+    <img src="icons/black-with-white.png" alt="X Logo">
+      </a>
+
+      <div class="nav-links">
+        <a href="#" class="nav-home">
+           <img src="icons/home-icon 1.svg" alt="">
+             <span>Home</span>
+        </a>
+        <a href="#" class="nav-explore">
+          <img src="icons/search.svg" alt="">
+    <span>Explore</span>
+        </a>
+          <a href="#" class="nav-notifications">
+        <img src="icons/notif-icon.svg" alt="">
+          <span>Notifications</span>
+        </a>
+        <a href="#" class="nav-messages">
+          <img src="icons/mail-icon.svg" alt="">
+          <span>Messages</span>
+             </a>
+    <a href="#" class="nav-grok">
+          <img src="icons/slash-icon.svg" alt="">
+            <span>Grok</span>
+        </a>
+        <a href="#" class="nav-lists">
+             <img src="icons/list-icon.svg" alt="">
+        <span>Lists</span>
+        </a>
+        <a href="#" class="nav-bookmark">
+          <img src="icons/bookmark-icon.svg" alt="">
+             <span>Bookmarks</span>
+        </a>
+        <a href="#" class="nav-communities">
+          <img src="icons/community-icon.svg" alt="">
+          <span>Communities</span>
+        </a>
+           <a href="#" class="nav-premium">
+          <img src="icons/premium-icon.svg" alt="">
+          <span>Premium</span>
+           </a>
+        <a href="#" class="nav-profile">
+          <img src="icons/profile-icon.svg" alt="">
+          <span>Profile</span>
+        </a>
+        <a href="#" class="nav-more">
+          <img src="icons/more-icon.svg" alt="">
+          <span>More</span>
+        </a>
+      </div>
+
+      <button class="twt-btn" type="button">Post</button>
+
+      <div class="user-section">
+        <div class="user-badge">
+          <div class="profile-icon">A</div>
+          <div class="user-info">
+         <span class="user-name">Aditya Nigam</span>
+    <span class="user-handle">@Archangel_One</span>
+          </div>
+        </div>
+        <img src="icons/dot-icon.svg" alt="more options" class="more-options-icon">
+      </div>
+    </nav>
+    <aside class="mobile-drawer">
+      <div class="mobile-header">
+        <div class="mobile-top">
+        <div class="profile-icon">A</div>
+           <button class="mobile-plus" type="button" aria-label="Add">
+            <img src="icons/plus-icon.svg" alt="">
+          </button>
+        </div>
+
+        <div class="user-info">
+          <span class="user-name">Aditya Nigam</span>
+        <span class="user-handle">@Archangel_One</span>
+        </div>
+
+        <div class="mobile-stats">
+            <div class="following-stat">1 <span>Following</span></div>
+        <div class="followers-stat">0 <span>Followers</span></div>
+        </div>
+      </div>
+
+      <div class="mobile-links">
+        <a href="#" class="nav-profile">
+          <img src="icons/profile-icon.svg" alt="">
+          <span>Profile</span>
+        </a>
+        <a href="#" class="nav-premium">
+          <img src="icons/premium-icon.svg" alt="">
+        <span>Premium</span>
+        </a>
+           <a href="#" class="nav-lists">
+          <img src="icons/list-icon.svg" alt="">
+          <span>Lists</span>
+        </a>
+    <a href="#" class="nav-bookmark">
+          <img src="icons/bookmark-icon.svg" alt="">
+          <span>Bookmarks</span>
+           </a>
+        <a href="#" class="nav-communities">
+        <img src="icons/community-icon.svg" alt="">
+           <span>Communities</span>
+        </a>
+        <a href="#" class="nav-monetization">
+          <img src="icons/monetiation.svg" alt="">
+<span>Monetization</span>
+        </a>
+          <a href="#" class="nav-settings">
+          <img src="icons/settings-icon.svg" alt="">
+         <span>Settings and privacy</span>
+        </a>
+        <a href="#" class="nav-logout">
+          <img src="icons/logout-icon.svg" alt="">
+        <span>Log out</span>
+          </a>
+      </div>
+
+      <div class="mobile-divider"></div>
+    </aside>
+
+<main class="main-content">
+      <section class="tweet-box" id="tweetBox">
+    <div class="profile-icon">A</div>
+          <div class="post-input">
+          <textarea id="tweetInput" placeholder="What is happening?!"></textarea>
+          <div class="tweet-box-bottom">
+            <div class="tweet-icons">
+              <img src="icons/gallery-icon.svg" alt="">
+               <img src="icons/gif-icon.svg" alt="">
+             <img src="icons/bullet-icon.svg" alt="">
+               <img src="icons/smiley-icon.svg" alt="">
+             <img src="icons/calendar-icon.svg" alt="">
+              <img src="icons/location-icon.svg" alt="">
+            </div>
+            <button class="tweet-btn" id="postTweetBtn" type="button">Post</button>
+            </div>
+        </div>
+      </section>
+      <section class="tweet-box mobile-tweet-box" id="mobileTweetBox">
+        <div class="mobile-tweet-top">
+            <button class="mobile-back" type="button" aria-label="Back">
+              <img src="icons/back-button.svg" alt="">
+          </button>
+
+    <a href="#" class="mobile-drafts">Drafts</a>
+             <button class="tweet-btn" id="mobilePostTweetBtn" type="button">Post</button>
+        </div>
+
+        <div class="mobile-tweet-body">
+              <div class="profile-icon">A</div>
+          <div class="post-input">
+               <textarea id="mobileTweetInput" placeholder="What is happening?!"></textarea>
+          </div>
+        </div>
+
+        <div class="mobile-reply">
+          <img src="icons/world-icon.svg" alt="">
+             <span>Everyone can reply</span>
+        </div>
+
+        <div class="mobile-divider"></div>
+
+        <div class="tweet-icons">
+              <img src="icons/gallery-icon.svg" alt="">
+                <img src="icons/gif-icon.svg" alt="">
+              <img src="icons/bullet-icon.svg" alt="">
+             <img src="icons/smiley-icon.svg" alt="">
+              <img src="icons/calendar-icon.svg" alt="">
+                <img src="icons/location-icon.svg" alt="">
+        </div>
+      </section>
+      <button class="floating-tweet-box-icon" id="openTweetBoxBtn" type="button" aria-label="Compose">
+      </button>
+      <section class="posts" id="posts">
+        <article class="post">
+          <div class="post-left">
+            <div class="profile-icon">A</div>
+          </div>
+          <div class="post-right">
+            <div class="post-top">
+              <div class="post-meta">
+                <span class="post-name">Aditya Nigam</span>
+            <span class="post-handle">@Archangel_One</span>
+                   <span class="post-dot">·</span>
+             <span class="post-time">1s</span>
+              </div>
+              <button class="post-more" type="button" aria-label="More">
+                <img src="icons/dot-icon.svg" alt="">
+              </button>
+            </div>
+            <p class="post-text">
+            Coffee in hand, bugs beware. Time to crush some code.
+            <span class="hashtag">#DeveloperLife</span>
+            <span class="hashtag">#Coding</span>
+            </p>
+
+
+            <div class="post-actions">
+            <button class="comment-post" type="button" aria-label="Comment">
+                <img src="icons/comment.svg" alt="">
+                  <span class="comments-count">0</span>
+              </button>
+
+              <button class="retweet-post" type="button" aria-label="Retweet">
+                <img src="icons/retweet.svg" alt="">
+            <span class="retweets-count">0</span>
+              </button>
+
+              <button class="like-post unlike-post" type="button" aria-label="Like">
+                 <img src="icons/like.svg" alt="">
+            <span class="likes-count">0</span>
+              </button>
+
+              <button class="views-post" type="button" aria-label="Views">
+                <img src="icons/stats.svg" alt="">
+                <span class="views-count">0</span>
+              </button>
+
+              <button class="bookmark-post" type="button" aria-label="Bookmark">
+            <img src="icons/bookmark-grey.svg" alt="">
+                 </button>
+
+              <button class="share-post" type="button" aria-label="Share">
+                <img src="icons/share.svg" alt="">
+        </button>
+
+            </div>
+            <div class="comments-section">
+              <div class="comment-row">
+                <input class="comment-input" type="text" placeholder="Post your reply">
+            <button class="comment-submit" type="button">Reply</button>
+              </div>
+               <div class="comments-list"></div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

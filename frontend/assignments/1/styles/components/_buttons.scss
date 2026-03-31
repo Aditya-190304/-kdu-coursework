@@ -1,0 +1,27 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.twt-btn {
+width: 100%;
+padding: 14px 16px;
+  background: v.$color-blue;
+color: #fff;
+border-radius: v.$radius-pill;
+  font-weight: 700;
+
+  &:focus-visible {
+    @include m.focus-ring;
+  }
+}
+
+.tweet-btn {
+  padding: 10px 16px;
+background: rgba(29, 155, 240, 0.35);
+  color: rgba(255, 255, 255, 0.9);
+border-radius: v.$radius-pill;
+  font-weight: 700;
+
+  &:focus-visible {
+    @include m.focus-ring;
+  }
+}

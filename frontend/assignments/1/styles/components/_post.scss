@@ -1,0 +1,103 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.profile-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: v.$radius-pill;
+  background: #d46a1c;
+  @include m.flex(center, center);
+  font-weight: 800;
+}
+.post {
+  @include m.flex(flex-start, flex-start, v.$space-4);
+padding: v.$space-4;
+  border: 1px solid v.$color-border;
+border-radius: v.$radius-md;
+}
+
+.post-right {
+  flex: 1;
+min-width: 0;
+}
+
+.post-top {
+  @include m.flex(center, space-between, v.$space-3);
+}
+
+.post-meta {
+  @include m.flex(center, flex-start, 8px);
+flex-wrap: wrap;
+}
+
+.post-text {
+  margin: v.$space-3 0 0;
+line-height: 1.4;
+}
+
+.post-actions {
+  @include m.flex(center, space-between, v.$space-2);
+margin-top: v.$space-3;
+}
+
+.post-actions button {
+  @include m.flex(center, flex-start, v.$space-2);
+  padding: v.$space-2;
+border-radius: v.$radius-pill;
+color: v.$color-muted;
+
+  &:hover {
+background: rgba(255, 255, 255, 0.06);
+  }
+
+  &:focus-visible {
+@include m.focus-ring;
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.like-post.liked {
+  color: v.$color-pink;
+}
+
+.like-post.liked .likes-count {
+  color: v.$color-pink;
+}
+.comments-section {
+  margin-top: v.$space-3;
+  border-top: 1px solid v.$color-border;
+  padding-top: v.$space-3;
+}
+
+.comment-row {
+  @include m.flex(center, flex-start, v.$space-2);
+}
+
+.comment-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: v.$radius-pill;
+  border: 1px solid v.$color-border;
+  background: transparent;
+}
+
+.comment-submit {
+  padding: 10px 14px;
+  border-radius: v.$radius-pill;
+  background: rgba(255, 255, 255, 0.08);
+
+  &:focus-visible {
+    @include m.focus-ring;
+  }
+}
+
+.comments-list {
+  margin-top: v.$space-3;
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-2;
+}
