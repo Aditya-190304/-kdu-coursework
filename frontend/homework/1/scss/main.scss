@@ -1,0 +1,23 @@
+/* scss/main.scss */
+@use "abstracts/variables";
+@use "abstracts/mixins";
+
+@use "base/reset";
+@use "base/globals";
+
+@use "layout/header";
+@use "layout/hero";
+@use "layout/grid";
+@use "layout/footer";
+
+@use "components/button";
+@use "components/card";
+@use "components/modal";
+
+@use "pages/home";
+@use "pages/about";
+
+@use "themes/light";
+@use "themes/dark";
+
+@use "vendors/bootstrap";

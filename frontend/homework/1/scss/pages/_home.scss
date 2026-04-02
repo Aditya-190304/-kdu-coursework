@@ -1,0 +1,181 @@
+/* scss/pages/_home.scss */
+@use "../abstracts/variables" as *;
+
+.features {
+  padding: 4rem 1.5rem;
+  background: $color-white;
+}
+
+.features-container {
+  max-width: $container-max;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    font-size: 2.75rem;
+    font-weight: bold;
+    color: $color-text;
+
+    span {
+      color: $color-primary;
+    }
+  }
+
+  p {
+    color: $color-muted;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: bold;
+  }
+}
+
+/* Kept exactly as in your CSS */
+.features.subtext {
+  margin: 0.75rem;
+  color: $color-muted;
+  font-size: 1.125rem;
+}
+
+.courses {
+  padding: 4rem 1.5rem;
+  background: $color-white;
+
+  h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: bold;
+    color: $color-text;
+    margin-bottom: 3rem;
+
+    span {
+      color: $color-primary;
+    }
+  }
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: $color-text;
+}
+
+.enroll-link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: $radius-sm;
+  font-weight: 600;
+}
+
+.stats {
+  padding: 3.5rem 1.5rem;
+  background: $color-primary;
+}
+
+.std_enrolled,
+.expert_instructors,
+.courses_offered,
+.success-rate {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.contact {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+
+  h2 {
+    font-size: 2.75rem;
+    font-weight: 900;
+
+    span {
+      color: $color-primary;
+    }
+  }
+
+  .subtext {
+    margin-top: 0.5rem;
+    margin-bottom: 1.75rem;
+    font-size: 1.125rem;
+    color: $color-muted;
+  }
+}
+
+.contact-form {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  padding: 1.75rem;
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: $radius-sm;
+    border: 1px solid $color-border;
+    font-size: 1rem;
+    outline: none;
+    background: $color-white;
+  }
+
+  textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+
+  /* Kept exactly as in your CSS (applies always, not just on focus) */
+  textarea {
+    border-color: $color-focus;
+  }
+}
+
+.field {
+  margin-bottom: 1.25rem;
+
+  label {
+    display: block;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.radio-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.checks {
+  margin: 1.25rem 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.check-item {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  column-gap: 12px;
+  align-items: start;
+  font-weight: bold;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    color: $color-primary;
+  }
+}
